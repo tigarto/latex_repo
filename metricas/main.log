@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.14)  9 AUG 2018 21:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.14)  21 AUG 2018 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -750,439 +750,440 @@ been already used, duplicate ignored
                    \relax 
 l.96 \newpage
               [1] [2]
-<figuras/sistema_simplificado2.png, id=96, 664.4825pt x 414.54875pt>
+<figuras/sistema_simplificado2.png, id=97, 664.4825pt x 414.54875pt>
 File: figuras/sistema_simplificado2.png Graphic file (type png)
 
 <use figuras/sistema_simplificado2.png>
 Package pdftex.def Info: figuras/sistema_simplificado2.png used on input line 1
-23.
+26.
 (pdftex.def)             Requested size: 332.24043pt x 207.27386pt.
- [3 <./figuras/sistema_simplificado2.png>] <figuras/modelo_TCP_IP2.png, id=104,
+ [3 <./figuras/sistema_simplificado2.png>] <figuras/modelo_TCP_IP2.png, id=106,
  676.5275pt x 566.115pt>
 File: figuras/modelo_TCP_IP2.png Graphic file (type png)
 
 <use figuras/modelo_TCP_IP2.png>
-Package pdftex.def Info: figuras/modelo_TCP_IP2.png used on input line 138.
+Package pdftex.def Info: figuras/modelo_TCP_IP2.png used on input line 141.
 (pdftex.def)             Requested size: 202.95981pt x 169.8358pt.
 
-<figuras/TCP_header.png, id=105, 803.0pt x 566.115pt>
+<figuras/TCP_header.png, id=107, 803.0pt x 566.115pt>
 File: figuras/TCP_header.png Graphic file (type png)
 
 <use figuras/TCP_header.png>
-Package pdftex.def Info: figuras/TCP_header.png used on input line 147.
+Package pdftex.def Info: figuras/TCP_header.png used on input line 150.
 (pdftex.def)             Requested size: 240.90186pt x 169.8358pt.
 
-<figuras/UDP_header.png, id=106, 803.0pt x 264.99pt>
+<figuras/UDP_header.png, id=108, 803.0pt x 264.99pt>
 File: figuras/UDP_header.png Graphic file (type png)
 
 <use figuras/UDP_header.png>
-Package pdftex.def Info: figuras/UDP_header.png used on input line 155.
+Package pdftex.def Info: figuras/UDP_header.png used on input line 158.
 (pdftex.def)             Requested size: 240.90186pt x 79.4976pt.
 
-<figuras/ICMP_header.png, id=107, 803.0pt x 393.47pt>
+<figuras/ICMP_header.png, id=109, 803.0pt x 393.47pt>
 File: figuras/ICMP_header.png Graphic file (type png)
 
 <use figuras/ICMP_header.png>
-Package pdftex.def Info: figuras/ICMP_header.png used on input line 163.
+Package pdftex.def Info: figuras/ICMP_header.png used on input line 166.
 (pdftex.def)             Requested size: 240.90186pt x 118.0419pt.
 
-<figuras/IPv4_header.png, id=108, 803.0pt x 578.16pt>
+<figuras/IPv4_header.png, id=110, 803.0pt x 578.16pt>
 File: figuras/IPv4_header.png Graphic file (type png)
 
 <use figuras/IPv4_header.png>
-Package pdftex.def Info: figuras/IPv4_header.png used on input line 171.
+Package pdftex.def Info: figuras/IPv4_header.png used on input line 174.
 (pdftex.def)             Requested size: 240.90186pt x 173.44933pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 180.
+ [4 <./figuras/modelo_TCP_IP2.png>] [5 <./figuras/TCP_header.png> <./figuras/UD
+P_header.png>] [6 <./figuras/ICMP_header.png> <./figuras/IPv4_header.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 183.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 180.
- [4 <./figuras/modelo_TCP_IP2.png>] [5 <./figuras/TCP_header.png> <./figuras/UD
-P_header.png>] [6 <./figuras/ICMP_header.png> <./figuras/IPv4_header.png>]
-Underfull \hbox (badness 4859) in paragraph at lines 203--203
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 183.
+
+Underfull \hbox (badness 4859) in paragraph at lines 206--206
 []|\OT1/cmr/m/n/12 NSA Cy-ber De-fense
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
 []|\OT1/cmr/m/n/12 Internet-Wide Scan
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 206--206
+Underfull \hbox (badness 1655) in paragraph at lines 209--209
 \OT1/cmr/m/n/12 ter-net Data Anal-y-sis
  []
 
 
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 198--208
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 201--211
  [][] 
  []
 
 [7] [8]
-Underfull \hbox (badness 4913) in paragraph at lines 229--229
+Underfull \hbox (badness 4913) in paragraph at lines 232--232
 \OT1/cmr/m/n/12 bit Ion Can-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 []|\OT1/cmr/m/n/12 herramienta ope-na-source
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 \OT1/cmr/m/n/12 ataques de dene-ga-cion de
  []
 
 
-Underfull \hbox (badness 7151) in paragraph at lines 229--230
+Underfull \hbox (badness 7151) in paragraph at lines 232--233
 \OT1/cmr/m/n/12 ser-vi-cio en-viando un gran
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--230
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
 []|\OT1/cmr/m/n/12 tcp, udp,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--231
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
 []|\OT1/cmr/m/n/12 HOIC (High
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--231
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
 \OT1/cmr/m/n/12 Or-bit Ion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
+Underfull \hbox (badness 10000) in paragraph at lines 235--235
 \OT1/cmr/m/n/12 Un-bear-able
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
+Underfull \hbox (badness 10000) in paragraph at lines 235--235
 \OT1/cmr/m/n/12 servi-dores web em-ple-ando
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 232--232
+Underfull \hbox (badness 1596) in paragraph at lines 235--235
 \OT1/cmr/m/n/12 TCP SYN flood and multi
  []
 
 
-Underfull \hbox (badness 2181) in paragraph at lines 232--232
+Underfull \hbox (badness 2181) in paragraph at lines 235--235
 \OT1/cmr/m/n/12 varias ob-fus-ca-tion tech-nique
  []
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 244--244
+Underfull \hbox (badness 10000) in paragraph at lines 247--247
 []|\OT1/cmr/m/n/12 RUDY (R-U-
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 244--244
+Underfull \hbox (badness 2707) in paragraph at lines 247--247
 []|\OT1/cmr/m/n/12 Es una her-ramienta es-crita
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 245--245
+Underfull \hbox (badness 1092) in paragraph at lines 248--248
 \OT1/cmr/m/n/12 python que per-mite re-alizar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
 []|\OT1/cmr/m/n/12 TFN(Tribe
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 246--246
+Underfull \hbox (badness 1533) in paragraph at lines 249--249
 \OT1/cmr/m/n/12 paci-dad de lan-zar mul-ti-ples
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 246--246
+Underfull \hbox (badness 1147) in paragraph at lines 249--249
 \OT1/cmr/m/n/12 ataques DDoS us-ando UDP
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
+Underfull \hbox (badness 10000) in paragraph at lines 259--259
 []|\OT1/cmr/m/n/12 Es una her-ramienta para
  []
 
 
-Underfull \hbox (badness 3471) in paragraph at lines 256--256
+Underfull \hbox (badness 3471) in paragraph at lines 259--259
 \OT1/cmr/m/n/12 generar ataques DDoS que
  []
 
 
-Underfull \hbox (badness 1297) in paragraph at lines 256--256
+Underfull \hbox (badness 1297) in paragraph at lines 259--259
 \OT1/cmr/m/n/12 para sim-u-lar var-ios zom-bies
  []
 
 
-Underfull \hbox (badness 2343) in paragraph at lines 256--256
+Underfull \hbox (badness 2343) in paragraph at lines 259--259
 \OT1/cmr/m/n/12 loc cuales crean conex-iones
  []
 
 
-Underfull \hbox (badness 2809) in paragraph at lines 256--256
+Underfull \hbox (badness 2809) in paragraph at lines 259--259
 \OT1/cmr/m/n/12 vez es-table-cida la conex-ion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
+Underfull \hbox (badness 10000) in paragraph at lines 259--259
 []|\OT1/cmr/m/n/12 tcp,smtp
  []
 
 [9] [10] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 274--274
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
 []|\OT1/cmr/m/n/12 Bit-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--275
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 []|\OT1/cmr/m/n/12 TCP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--275
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 \OT1/cmr/m/n/12 UDP,
  []
 
 
-Overfull \hbox (0.96529pt too wide) in paragraph at lines 275--275
+Overfull \hbox (0.96529pt too wide) in paragraph at lines 278--278
 \OT1/cmr/m/n/12 IP,ARP| 
  []
 
 
-Overfull \hbox (9.78601pt too wide) in paragraph at lines 276--276
+Overfull \hbox (9.78601pt too wide) in paragraph at lines 279--279
 []|\OT1/cmr/m/n/12 packETH| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--277
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
 []|\OT1/cmr/m/n/12 TCP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--277
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
 \OT1/cmr/m/n/12 UDP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--277
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
 \OT1/cmr/m/n/12 IP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--277
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
 \OT1/cmr/m/n/12 ARP,
  []
 
 
-Overfull \hbox (2.57497pt too wide) in paragraph at lines 278--278
+Overfull \hbox (2.57497pt too wide) in paragraph at lines 281--281
 []|\OT1/cmr/m/n/12 Nemesis| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 []|\OT1/cmr/m/n/12 ARP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 \OT1/cmr/m/n/12 DNS,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 \OT1/cmr/m/n/12 ETH-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 \OT1/cmr/m/n/12 ER-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 \OT1/cmr/m/n/12 NET,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 \OT1/cmr/m/n/12 ICMP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 \OT1/cmr/m/n/12 IGMP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 \OT1/cmr/m/n/12 IP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 \OT1/cmr/m/n/12 OSPF,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 \OT1/cmr/m/n/12 RIP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 \OT1/cmr/m/n/12 TCP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
+Underfull \hbox (badness 10000) in paragraph at lines 283--283
 []|\OT1/cmr/m/n/12 D-ITG
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
+Underfull \hbox (badness 10000) in paragraph at lines 283--283
 \OT1/cmr/m/n/12 (Dis-
  []
 
 
-Overfull \hbox (2.77496pt too wide) in paragraph at lines 280--280
+Overfull \hbox (2.77496pt too wide) in paragraph at lines 283--283
 \OT1/cmr/m/n/12 tributed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
+Underfull \hbox (badness 10000) in paragraph at lines 283--283
 \OT1/cmr/m/n/12 In-ter-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
+Underfull \hbox (badness 10000) in paragraph at lines 283--283
 \OT1/cmr/m/n/12 net
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
+Underfull \hbox (badness 10000) in paragraph at lines 283--283
 \OT1/cmr/m/n/12 Traf-fic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
+Underfull \hbox (badness 10000) in paragraph at lines 283--283
 \OT1/cmr/m/n/12 Gen-er-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--281
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []|\OT1/cmr/m/n/12 HTTP,
  []
 
 
-Overfull \hbox (4.07219pt too wide) in paragraph at lines 281--281
+Overfull \hbox (4.07219pt too wide) in paragraph at lines 284--284
 \OT1/cmr/m/n/12 TCP/IP| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
 []|\OT1/cmr/m/n/12 curl-
  []
 
 
-Underfull \hbox (badness 6236) in paragraph at lines 282--282
+Underfull \hbox (badness 6236) in paragraph at lines 285--285
 []|\OT1/cmr/m/n/12 Herramienta que sim-ula el com-
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 282--282
+Underfull \hbox (badness 1675) in paragraph at lines 285--285
 \OT1/cmr/m/n/12 por-tamiento y carga gen-er-ada por
  []
 
 
-Underfull \hbox (badness 4353) in paragraph at lines 282--282
+Underfull \hbox (badness 4353) in paragraph at lines 285--285
 \OT1/cmr/m/n/12 HTTP/HTTPS y FT-P/FTPs con
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
 []|\OT1/cmr/m/n/12 HTTP,
  []
 
 
-Overfull \hbox (4.56384pt too wide) in paragraph at lines 282--282
+Overfull \hbox (4.56384pt too wide) in paragraph at lines 285--285
 \OT1/cmr/m/n/12 HTTPS,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
 \OT1/cmr/m/n/12 FTP,
  []
 
 
-Overfull \hbox (47.3559pt too wide) in paragraph at lines 271--285
+Overfull \hbox (47.3559pt too wide) in paragraph at lines 274--288
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 48.79987pt on input line 285.
+LaTeX Warning: Float too large for page by 48.79987pt on input line 288.
 
 
-Overfull \hbox (7.8277pt too wide) in paragraph at lines 293--293
+Overfull \hbox (7.8277pt too wide) in paragraph at lines 296--296
 []|\OT1/cmr/m/n/12 HTTPerf| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--293
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
 []|\OT1/cmr/m/n/12 HTTP,
  []
 
 
-Overfull \hbox (47.3559pt too wide) in paragraph at lines 290--295
+Overfull \hbox (47.3559pt too wide) in paragraph at lines 293--298
  [][] 
  []
 
 
-Overfull \hbox (62.76228pt too wide) in paragraph at lines 302--303
+Overfull \hbox (62.76228pt too wide) in paragraph at lines 305--306
 []\OT1/cmr/bx/n/12 Nota\OT1/cmr/m/n/12 : Ver las her-ramien-tas rela-cionadas -
 --> http://bittwist.sourceforge.net/doc.html 
  []
 
 [13] [14]
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 317--326
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 320--329
  [][] 
  []
 
 [15]
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 337--352
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 340--355
  [][] 
  []
 
 [16] [17]
-Overfull \hbox (0.94353pt too wide) in paragraph at lines 426--427
+Overfull \hbox (0.94353pt too wide) in paragraph at lines 429--430
 \OT1/cmr/m/n/12 El c^^Sodigo ejem-plo se en-cuen-tra disponible en: []$\OT1/cmt
 t/m/n/12 https : / / github . com / tigarto$[] 
  []
 
 (./main.bbl [18]) [19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 432.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 432.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 432.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 432.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 9D93D933A1CF95778997599B1D748A60;795.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 432.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
  ) 
 Here is how much of TeX's memory you used:
- 19507 strings out of 493029
- 350099 string characters out of 6136234
- 432944 words of memory out of 5000000
- 22636 multiletter control sequences out of 15000+600000
+ 19512 strings out of 493029
+ 350192 string characters out of 6136234
+ 432959 words of memory out of 5000000
+ 22640 multiletter control sequences out of 15000+600000
  12208 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,56p,678b,732s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1195,10 +1196,10 @@ dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (20 pages, 1479429 bytes).
+Output written on main.pdf (20 pages, 1483836 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
+ 255 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
  144 words of extra memory for PDF output out of 10000 (max. 10000000)
 
