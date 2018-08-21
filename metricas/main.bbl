@@ -1,0 +1,27 @@
+\begin{thebibliography}{1}
+
+\bibitem{kdd_desc}
+Kdd cup 1999 data data set.
+\newblock (Date last accessed 9-August-2018).
+
+\bibitem{dos_tools}
+Sunny Behal and Krishan Saluja.
+\newblock Characterization and comparison of ddos attack tools and traffic
+  generators -a review.
+\newblock 19:383--393, 04 2017.
+
+\bibitem{CIDDS-001}
+Abhishek Verma and Virender Ranga.
+\newblock Statistical analysis of cidds-001 dataset for network intrusion
+  detection systems using distance-based machine learning.
+\newblock {\em Procedia Computer Science}, 125:709 -- 716, 2018.
+\newblock The 6th International Conference on Smart Computing and
+  Communications.
+
+\bibitem{using_kdd}
+Atilla Özgür and Hamit Erdem.
+\newblock A review of kdd99 dataset usage in intrusion detection and machine
+  learning between 2010 and 2015.
+\newblock {\em PeerJ Preprints}, 4:e1954v1, April 2016.
+
+\end{thebibliography}
