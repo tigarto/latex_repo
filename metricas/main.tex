@@ -114,11 +114,11 @@ Un sistema de seguridad puede ser visto como una caja negra con unas entradas (d
 
 \section{Introducción}
 
-En la figura 1 de muestra el diagrama de bloques de un sistema de seguridad simplificado. Para nuestro caso, se puede observar que este esta dividido en 3 bloques principales:
+En la figura 1 de muestra el diagrama de bloques de un sistema de seguridad simplificado que se divide en los siguientes componentes:
 \begin{enumerate}
-\item \textbf{Preprocesamiento}: Este componente se encarga de procesar los datos en bruto (sean cual sean los definidos) para obtener medidas secundarias que permitan un descripción general mas facil de procesar en etapas posteriores.
-\item \textbf{Alarma}: Este componente lanza alarmas de acuerdo a una analisis de las metricas lanzando alarmas que pueden ser tomadas como salidas del sistema o como entradas a la etapa de procesamiento.
-\item \textbf{Procesamiento}: Toma en cuenta entradas como alarmas y/o informacion preprocesada y a partir de estas toma decisiones de control según los requerimientos para los cuales fue diseñado. 
+\item \textbf{Preprocesamiento}: Componente que procesa los datos de entrada (datos de red sin procesar) para extraer sus principales caracteristicas con el objetivo de generar una representación equivalente pero mas reducida (vectores caracteristicos) mas apropiada para etapas de procesamiento posteriores.
+\item \textbf{Alarma}: este componentes los datos caracteristicos resultantes de la etapa de preproceamiento y lanza alarmas de red (logs que reporta eventos, reportes de red, etc) con el fin de indicar a los administradores posibles problemas en la red. El papel de las alarmas no se limita meramente al de indicadores, tambien pueden ser empleadas como entradas adicionales al componente de procesamiento tal y como se muestra en la figura 1.
+\item \textbf{Procesamiento}: este componente lleva a cabo acciones de control (bloquear trafico, limitar ancho de banda, reconfigurar la red, aislar equipos infectados, etc) con el fin de mitigar problemas en la red sin intervención humana.
 \end{enumerate}
 
 \begin{figure}[htbp]
