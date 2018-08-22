@@ -132,14 +132,10 @@ En el reporte se hará enfasis en las fuentes empleadas para generar datos de en
 
 \section{Entradas}
 
-Un sistema de seguridad puede procesar diferentes tipos de entradas (trafico de red, carga de memoria, logs, tipo de sistema operativo, puertos abiertos, etc). Existen además, diferentes tipos de sistemas de seguridad (antivirus, firewalls, IDS, IPS, etc.) los cuales, de acuerdo a unas entradas determinadas realizan tareas para proteger, desde equipos de computo hasta redes de posibles ataques. No obstante, el tipo de sistema que se implemente es quien dictará el tipo de entradas que se usen; asi por ejemplo, las entradas para un antivirus no serán las mismas que para un sistema de detección de intruciones (IDS). Lo anterior plantea una primera restricción ¿Que sistema de seguridad se va a implementar?
+Un sistema de seguridad puede procesar diferentes tipos de entradas (trafico de red, carga de memoria, logs, tipo de sistema operativo, puertos abiertos, etc). Existen además, diferentes tipos de sistemas de seguridad (antivirus, firewalls, IDS, IPS, etc.) los cuales, de acuerdo a unas entradas determinadas realizan tareas para proteger, desde equipos de computo hasta redes de posibles ataques. Por otro lado, el tipo de sistema que se implemente es quien dictará el tipo de entradas que se usen; asi por ejemplo, las entradas para un antivirus no serán las mismas que para un sistema de detección de intruciones (IDS). Lo anterior plantea una primera restricción ¿Que sistema de seguridad se va a implementar?
 
-Para el caso, se hará enfasis en los IDS. Un IDS es un sistema que evalua el tráfico de red en busqueda de amenazas y riesgos y lanza alarmas en caso de deteccion de un patrón de tráfico anormal. 
+Para el caso, se hará enfasis en los IDS el cual es un sistema que evalua el tráfico de red en busqueda de amenazas y riesgos y lanza alarmas en caso de deteccion de un patrón de tráfico anormal. Como para la evaluación y test de un IDS es necesario definir el trafico de entrada (restringido a trafico DoS y trafico normal para el caso), ¿como generar este tipo de trafico de manera controlada para evaluar bajo condiciones controladas un IDS? 
 
-Una vez definido el sistema en el cual se hará enfasis el siguiente paso, consiste en definir las entradas del sistema que para el caso de los IDS son tráfico de red, sin embargo, ¿como generar trafico de red y mas si se quiere que este sea controlado pues lo que se desea es evaluar bajo condiciones controladas un IDS?
-
-% Introduciendo los ataques DoS como restricción
-Como existen diferentes tipos de ataques como herramientas para llevarlos a cabo [dd] es importante tambien definir el tipo de ataque en el cual se hará enfasis; siendo para el caso, el ataque de denegación de servicios (DoS). 
 
 % Halbando de las fuentes de generación de trafico DoS.
  La generación de los datos de entrada (tráfico de red para el caso), 
@@ -147,8 +143,8 @@ Como existen diferentes tipos de ataques como herramientas para llevarlos a cabo
 puede ser hecha empleando las siguientes fuentes:
 \begin{itemize}
 \item Datasets
-\item Herramientas de geneneracion de ataques.
-\item Generadores de trafico.
+\item Herramientas de geneneracion de ataques de denegación de servicio.
+\item Generadores de tráfico.
 \end{itemize}
 
 
