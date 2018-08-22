@@ -97,10 +97,12 @@ Prof. Danny \textsc{Múnera} % Supervisor's Name
 
 \begin{abstract}
 
-De a cuerdo a World internet usage and poblation statistics, aproximadamente un 54.4\% tienen acceso a internet \citep{internet_stats}; gracias a esto, son cada vez menores las barreras fisicas para el uso de información. La información es un recurso vital y como tal, debe ser protegido; sin embargo, dicha tarea es cada vez mas desafiante debido la mayor facilidad, numero y sofisticación de los ataques actualmente existentes. Para hacer frente éstos se han creado diferentes sistemas de seguridad como firewalls, antivirus, IDS e IPS entre otros.
+De a cuerdo a World internet usage and poblation statistics, aproximadamente un 54.4\% tienen acceso a internet \citep{internet_stats}; gracias a esto, son cada vez menores las barreras fisicas para el uso de información. La información es un recurso vital y como tal, debe ser protegido; sin embargo, dicha tarea es cada vez mas desafiante debido a la mayor facilidad, numero y sofisticación de los ataques actualmente existentes. Para hacer frente éstos se han creado diferentes sistemas de seguridad como firewalls, antivirus, IDS e IPS entre otros.
 
-Un sistema de seguridad puede ser visto como una caja negra con unas entradas (datos de red: trafico de red, logs, reportes de hardware), unas salidas (alarmas, reportes de red, logs) y un proceso, cuya finalidad es actuar sobre las entradas, procesarlas y generar las salidas necesarias. El presente reporte tratara con mas detalle los aspectos relacionados con las entradas ya que estas, constituyen el punto de partida en el proceso de diseño de un sistema de seguridad. 
+Un sistema de seguridad puede ser visto como una caja negra con unas entradas (datos de red: trafico de red, logs, reportes de hardware), unas salidas (alarmas, reportes de red, logs) y un proceso, cuya finalidad es actuar sobre las entradas, procesarlas y generar las salidas necesarias. Existen muchos tipos de ataques de red siendo los ataques de denegación de servicio unos de los mas comunes. 
 
+Teniendo todo lo anterior y que, la definición y restricción de las entradas de cualquier sistema es vital, el presente reporte tratará las entradas de un sistema de seguridad restringiendo estas solo a ataques de denegación de servicio (DoS) como se mostrará mas adelante. 
+ 
 \end{abstract}
 
 \section{Objetivos}
@@ -128,67 +130,35 @@ En la figura 1 de muestra el diagrama de bloques de un sistema de seguridad simp
 \end{center}
 \end{figure}
 
-En el siguiente reporte se hará enfasis en la parte asociada al bloque de preprocesamiento mostrado en la figura anterior. Inicialmente se abordaran los principales aspectos, que a nuestro modo de ver, estan relacionados con las entradas. Posteriormente, se mostraran algunas herramientas relacionadas que pueden ser de utilidad para el proceso de inspeccion de trafico todo esto, para culminar hablando de las metricas y caracteristicas de salidas que seria ideal poder tener a la salida de un sistema de procesamiento.
+En el reporte se hará enfasis en las fuentes empleadas para generar datos de entrada y las diferentes herramientas empleadas para su analisis, restringiendo el estudio a los ataques de denegación de servicio. Finalmente, el documento culminará con una sección dedicada a las discuciones y conclusiones.
 
 \section{Entradas}
 
-\subsection{Sobre el trafico de red}
+Un sistema de seguridad puede procesar diferentes tipos de entradas (trafico de red, carga de memoria, logs, tipo de sistema operativo, puertos abiertos, etc). Existen ademas, diferentes tipos de sistemas de seguridad (antivirus, firewalls, IDS, IPS, etc.) los cuales, de acuerdo a unas entradas determinadas realizan tareas para proteger, desde equipos de computo hasta redes, de ataques. No obstante, el tipo de sistema que se implemente es quien dictará el tipo de entradas que se usen; asi por ejemplo, las entradas para un antivirus no serán las mismas que para un sistema de detección de intruciones (IDS). Lo anterior plantea una primera restricción ¿Que sistema de seguridad se va a implementar?
 
-La comunicación entre las maquinas a traves de una red es posible gracias a la transferencia de paquetes. Por ende un primer paso antes de entrar a hablar de lo mas relevante en el presente reporte es necesario por lo menos ilustrar este aspecto de manera sencilla. Tal y como lo muestra la figura 2, en el modelo TCP/IP los datos son encapsulados y desencapsulados cuando son procesados en sus respectivas fuentes y destinos agregando una serie de cabeceras segun la capa. 
+Para el caso, se hará enfasis en los IDS. Un IDS es un sistema que evalua el tráfico de red en busqueda de amenazas y riesgos y lanza alarmas en caso de deteccion de un patrón de tráfico anormal. 
 
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[scale=0.3]{modelo_TCP_IP2.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
-\caption{Encapsulamiento de datos}
-\end{center}
-\end{figure}
+Una vez definido el sistema en el cual se hará enfasis el siguiente paso, consiste en definir las entradas del sistema que para el caso de los IDS son tráfico de red, sin embargo, ¿como generar trafico de red y mas si se quiere que este sea controlado pues lo que se desea es evaluar bajo condiciones controladas un IDS?
 
-Cuando se encapsula un dato, en cada cabecera se agrega una información asociada con dicha capa, y aunque, esto no es de importancia en lo que respecta al tema principal de este reporte, para facilitar la comprensión de lo que sigue se mostraran figuras con los campos de las principales cabeceras:
+% Introduciendo los ataques DoS como restricción
+Como existen diferentes tipos de ataques como herramientas para llevarlos a cabo [dd] es importante tambien definir el tipo de ataque en el cual se hará enfasis; siendo para el caso, el ataque de denegación de servicios (DoS). 
 
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[scale=0.3]{TCP_header.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
-\caption{Cabecera TCP}
-\end{center}
-\end{figure}
+% Halbando de las fuentes de generación de trafico DoS.
+ La generación de los datos de entrada (tráfico de red para el caso), 
 
-
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[scale=0.3]{UDP_header.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
-\caption{Cabecera UDP}
-\end{center}
-\end{figure}
-
-
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[scale=0.3]{ICMP_header.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
-\caption{Cabecera ICMP}
-\end{center}
-\end{figure}
-
-
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[scale=0.3]{IPv4_header.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
-\caption{Cabecera IPv4}
-\end{center}
-\end{figure}
-
-\subsection{Preguntas guia}
-
-En el presente reporte nos centraremos en el analisis de los elementos relacionados con la etapa de preprocesamiento haciendo enfasis en sus entradas y salidas Teniendo en cuenta lo anterior, este documento tratara de dar soluciones a preguntas como:
+puede ser hecha empleando las siguientes fuentes:
 \begin{itemize}
-\item ¿Cuales serán las entradas al sistema?
-\item ¿Que tipos de ataques de denegacion de servicio existen?
-\item ¿Cuales dataset existen y donde obtenerlos?
-\item ¿Que herramientas se pueden emplear para lanzar ataques de denegacion de servicio?
-\item ¿Que metricas son las mas importantes para detectar ataques de denegacion de servicio?
-\item ¿Que restricciones experimentales deberian ser tenidas en cuenta?
+\item Datasets
+\item Herramientas de geneneracion de ataques.
+\item Generadores de trafico.
 \end{itemize}
 
-\subsection{Fuentes de generación de ataques de deegación de servicio}
+
+
+
+
+
+\subsection{Fuentes de generación de ataques de degación de servicio}
 
 Cuando nos referimos a las fuentes de generación de ataques, en el siguiente documento queremos hacer referencia a aquellas herramientas y conjuntos de datos que pueden ser empleados como fuente de generacion de trafico no solo para lanzar ataques, sino tambien como sucede mas especificamente en lo que queremos, para evaluar un sistema de seguridad propuesto. Como hablar de ataques es ahondar en un tema muy amplio, la busqueda se restringio a herramientas para lanzar ataques de denegación de servicio para lo cual haciendo una revisión de la literatura se realizo la siguiente clasificación.
 

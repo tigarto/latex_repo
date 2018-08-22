@@ -1,12 +1,10 @@
 \BOOKMARK [1][-]{section.1}{Objetivos}{}% 1
 \BOOKMARK [1][-]{section.2}{Introducci\363n}{}% 2
 \BOOKMARK [1][-]{section.3}{Entradas}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Sobre el trafico de red}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Preguntas guia}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.3}{Fuentes de generaci\363n de ataques de deegaci\363n de servicio}{section.3}% 6
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Datasets}{subsection.3.3}% 7
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Herramientas para lanzar ataques de denegacion de servicio}{subsection.3.3}% 8
-\BOOKMARK [3][-]{subsubsection.3.3.3}{Generadores de trafico}{subsection.3.3}% 9
-\BOOKMARK [1][-]{section.4}{Analisis de trafico}{}% 10
-\BOOKMARK [1][-]{section.5}{Salidas}{}% 11
-\BOOKMARK [1][-]{section.6}{Conclusiones}{}% 12
+\BOOKMARK [2][-]{subsection.3.1}{Fuentes de generaci\363n de ataques de degaci\363n de servicio}{section.3}% 4
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Datasets}{subsection.3.1}% 5
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Herramientas para lanzar ataques de denegacion de servicio}{subsection.3.1}% 6
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Generadores de trafico}{subsection.3.1}% 7
+\BOOKMARK [1][-]{section.4}{Analisis de trafico}{}% 8
+\BOOKMARK [1][-]{section.5}{Salidas}{}% 9
+\BOOKMARK [1][-]{section.6}{Conclusiones}{}% 10
