@@ -97,7 +97,7 @@ Prof. Danny \textsc{Múnera} % Supervisor's Name
 
 \begin{abstract}
 
-De a cuerdo al World internet usage and poblation statistics, aproximadamente un 54.4\% tienen acceso a internet \citep{internet_stats}. Como el recurso por excelencia intercambiado a traves de internet es la información, datos como estos demuestran que la información es un elemento fundamental para el funcionamiento de la humanidad. Al ser información un recurso vital debe ser protegido; sin embargo, dicha tarea es cada vez mas desafiante debido a la mayor facilidad, numero y sofisticación de los ataques actualmente existentes. Para hacer frente éstos se han creado diferentes sistemas de seguridad como firewalls, antivirus, IDS e IPS entre otros.
+De a cuerdo al World internet usage and poblation statistics, aproximadamente un 54.4\% tienen acceso a internet \citep{internet_stats}. Como el recurso por excelencia intercambiado a traves de internet es la información, datos como estos demuestran que la información es un elemento fundamental para el funcionamiento de la sociedad. Al ser información un recurso vital debe ser protegido; sin embargo, dicha tarea es cada vez mas desafiante debido a la mayor facilidad, numero y sofisticación de los ataques actualmente existentes. Para hacer frente éstos se han creado diferentes sistemas de seguridad como firewalls, antivirus, IDS e IPS entre otros.
 
 Un sistema de seguridad puede ser visto como una caja negra con unas entradas (datos de red: trafico de red, logs, reportes de hardware, etc.), unas salidas (alarmas, reportes de red, logs) y un proceso, cuya finalidad es actuar sobre las entradas, procesarlas y generar las salidas necesarias. Como existen una gran cantidad de ataques y defensas es necesario definir con claridad lo que hará el sistema de seguridad. Para el presente caso, el sistema de seguridad a tratar se restringirá a los sistemas de detección de intrusiones (IDS) y el ataque a explorar, será el ataque de denegación de servicios (DoS).
  
@@ -121,6 +121,8 @@ En la figura 1 de muestra el diagrama de bloques de un sistema de seguridad simp
 \item \textbf{Procesamiento}: este componente lleva a cabo acciones de control (bloquear trafico, limitar ancho de banda, reconfigurar la red, aislar equipos infectados, etc) con el fin de mitigar problemas en la red sin intervención humana.
 \end{enumerate}
 
+En el presente reporte se hará enfasis en las fuentes empleadas para generar datos de entrada y las diferentes herramientas empleadas para su analisis, restringiendo el estudio a los ataques de denegación de servicio. Finalmente, el documento culminará con una sección dedicada a las discuciones y conclusiones.
+
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[scale=0.5]{sistema_simplificado2.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
@@ -128,37 +130,43 @@ En la figura 1 de muestra el diagrama de bloques de un sistema de seguridad simp
 \end{center}
 \end{figure}
 
-En el reporte se hará enfasis en las fuentes empleadas para generar datos de entrada y las diferentes herramientas empleadas para su analisis, restringiendo el estudio a los ataques de denegación de servicio. Finalmente, el documento culminará con una sección dedicada a las discuciones y conclusiones.
+\pagebreak
 
 \section{Entradas}
 
-Un sistema de seguridad puede procesar diferentes tipos de entradas (trafico de red, carga de memoria, logs, tipo de sistema operativo, puertos abiertos, etc). Existen además, diferentes tipos de sistemas de seguridad (antivirus, firewalls, IDS, IPS, etc.) los cuales, de acuerdo a unas entradas determinadas realizan tareas para proteger, desde equipos de computo hasta redes de posibles ataques. Por otro lado, el tipo de sistema que se implemente es quien dictará el tipo de entradas que se usen; asi por ejemplo, las entradas para un antivirus no serán las mismas que para un sistema de detección de intruciones (IDS). Lo anterior plantea una primera restricción ¿Que sistema de seguridad se va a implementar?
+Un sistema de seguridad puede procesar diferentes tipos de entradas (trafico de red, carga de memoria, logs, puertos abiertos, etc). Existen además, diferentes tipos de sistemas de seguridad (antivirus, firewalls, IDS, IPS, etc.) los cuales, de acuerdo a unas entradas determinadas realizan tareas para proteger, desde equipos de computo hasta redes de posibles ataques. De todas las entradas posibles, solo unas cuandas son empleadas y dependen especificamente de la tarea llevada a cabo por el sistema de seguridad; asi por ejemplo, las entradas para un antivirus no serán las mismas que para un sistema de detección de intruciones (IDS). 
 
-Para el caso, se hará enfasis en los IDS el cual es un sistema que evalua el tráfico de red en busqueda de amenazas y riesgos y lanza alarmas en caso de deteccion de un patrón de tráfico anormal. Como para la evaluación y test de un IDS es necesario definir el trafico de entrada (restringido a trafico DoS y trafico normal para el caso), ¿como generar este tipo de trafico de manera controlada para evaluar bajo condiciones controladas un IDS? 
+Lo anterior plantea una primera restricción ¿Que sistema de seguridad se va a implementar? Pues bien, para el caso, se hará enfasis en los IDS que son sistemas
+cuya finalidad es evaluar el tráfico de red en busca de amenazas y lanzar alarmas en caso de detección de un patrón de tráfico anormal.
 
-
-% Halbando de las fuentes de generación de trafico DoS.
- La generación de los datos de entrada (tráfico de red para el caso), 
-
-puede ser hecha empleando las siguientes fuentes:
+Cuando se define un IDS, es necesario definir el tráfico de entrada a emplear. Por un lado por que esto facilitará las pruebas y evaluación de dicho sistema y por el otro, por que permitira un mejor control de las condiciones experimentales. Adicionalmente, debido al gran numero de ataques es bueno restringir el ataque se hará enfasis, siendo el ataque de Denegación de servicio (DoS) el elegido para este caso. Para poder generar tráfico DoS existen un gran numero de herramientas de diferentes tipos \citep{dos_tools,net_attacks_taxonomy}. En el presente documento, tomando como base la literatura relacionada con el tema, se definieron las siguientes tres fuentes de tráfico tal y como se muestra en la figura 2:
 \begin{itemize}
 \item Datasets
 \item Herramientas de geneneracion de ataques de denegación de servicio.
 \item Generadores de tráfico.
 \end{itemize}
 
+En las siguientes secciones se explicará con un poco mas de detalle cada una de estas.
 
-
-
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=0.5]{sources.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
+\caption{Sistema de seguridad simplificado}
+\end{center}
+\end{figure}
 
 
 \subsection{Fuentes de generación de ataques de degación de servicio}
 
+
+% Mejorar redaccion
 Cuando nos referimos a las fuentes de generación de ataques, en el siguiente documento queremos hacer referencia a aquellas herramientas y conjuntos de datos que pueden ser empleados como fuente de generacion de trafico no solo para lanzar ataques, sino tambien como sucede mas especificamente en lo que queremos, para evaluar un sistema de seguridad propuesto. Como hablar de ataques es ahondar en un tema muy amplio, la busqueda se restringio a herramientas para lanzar ataques de denegación de servicio para lo cual haciendo una revisión de la literatura se realizo la siguiente clasificación.
 
 \subsubsection{Datasets}
 
 En lo que respecta al trafico de red existen varios datasets (conjunto de datos) relacionados con difentes ataques tales como los que se muestran en la siguiente tabla:
+
+\begin{comment}
 
 \begin{table}[htbp]
 \centering
@@ -172,7 +180,7 @@ Internet-Wide Scan Data Repository & Large collection of Internet-wide scanning 
 LIBSVM & This page contains many classification, regression, multi-label and string data sets stored in LIBSVM format. Many are from UCI, Statlog, StatLib and other collections \href{https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/}{link}  \tabularnewline \hline
 Center for Applied Internet Data Analysis (CAIDA) Datasets & Internet measurement with collaboration of numerous institutions, academics, commercial and noncommercial contributors, including anonymized Internet traces, Code Red worm propagation, passive traces on high-speed links \href{http://www.caida.org/projects/trends/imdc/}{link} \tabularnewline \hline
 \end{tabular}
-\end{table}
+\end{table} 
 \FloatBarrier
 
 En cada data set se definen unas parametros (features) como la IP origen, la IP destino, el tipo de ataque, etc. Un ejemplo se puede encontrar en el KDD Cup 1999 Data Set\citep{kdd_desc, CIDDS-001}.

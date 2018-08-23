@@ -14,6 +14,12 @@ Sunny Behal and Krishan Saluja.
   generators -a review.
 \newblock 19:383--393, 04 2017.
 
+\bibitem{net_attacks_taxonomy}
+N.~Hoque, Monowar~H. Bhuyan, R.C. Baishya, D.K. Bhattacharyya, and J.K. Kalita.
+\newblock Network attacks: Taxonomy, tools and systems.
+\newblock {\em Journal of Network and Computer Applications}, 40:307 -- 324,
+  2014.
+
 \bibitem{CIDDS-001}
 Abhishek Verma and Virender Ranga.
 \newblock Statistical analysis of cidds-001 dataset for network intrusion
