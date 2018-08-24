@@ -16,6 +16,7 @@
 \usepackage{listingsutf8}
 \usepackage{tabularx}
 \usepackage{placeins}
+\usepackage[paper=portrait,pagesize]{typearea}
 
 
 
@@ -130,7 +131,6 @@ En el presente reporte se hará enfasis en las fuentes empleadas para generar da
 \end{center}
 \end{figure}
 
-\pagebreak
 
 \section{Entradas}
 
@@ -158,15 +158,43 @@ En las siguientes secciones se explicará con un poco mas de detalle cada una de
 
 \subsection{Fuentes de generación de ataques de degación de servicio}
 
-
-% Mejorar redaccion
-Cuando nos referimos a las fuentes de generación de ataques, en el siguiente documento queremos hacer referencia a aquellas herramientas y conjuntos de datos que pueden ser empleados como fuente de generacion de trafico no solo para lanzar ataques, sino tambien como sucede mas especificamente en lo que queremos, para evaluar un sistema de seguridad propuesto. Como hablar de ataques es ahondar en un tema muy amplio, la busqueda se restringio a herramientas para lanzar ataques de denegación de servicio para lo cual haciendo una revisión de la literatura se realizo la siguiente clasificación.
+En lo que respecta al presente documento, y tal como se muestra en la figura 2, las fuentes de generación de tráfico hacen referencia a las aplicaciónes de usuario para generación de trafico, generadores de tráfico (scripts y codigo fuente) y datasets (conjuntos de datos) que pueden ser seleccionadas como entradas con el objetivo de probar y evaluar un sistema. A continuación, se describirá con un poco mas de detalle cada una de las posibles fuentes que pueden ser tomadas como entradas haciendo énfasis en las aplicaciones existentes dentro de cada una de las categorias anteriormente mencionadas.
 
 \subsubsection{Datasets}
 
 En lo que respecta al trafico de red existen varios datasets (conjunto de datos) relacionados con difentes ataques tales como los que se muestran en la siguiente tabla:
 
-\begin{comment}
+% https://tex.stackexchange.com/questions/337/how-to-change-certain-pages-into-landscape-portrait-mode
+
+\newpage
+\KOMAoptions{paper=landscape,pagesize}
+\recalctypearea
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|p{0.2\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}|}\hline
+\multicolumn{1}{|c|}{\textit{\textbf{Dataset}}} & 
+\multicolumn{1}{c|}{\textit{\textbf{Tipo de datos}}} &
+\multicolumn{1}{|c|}{\textit{\textbf{Tamaño}}} & 
+\multicolumn{1}{|c|}{\textit{\textbf{Fecha}}} &
+\multicolumn{1}{|c|}{\textit{\textbf{Labeled or Unlabeled}}} \tabularnewline \hline
+
+\href{http://digitalcorpora.org/corpora/packet-dumps}{Digital Corpora} & 
+archivos pcap &
+N/A & 
+2008 - 2009 & 
+U 
+\tabularnewline \hline
+
+\end{tabular}
+\end{table} 
+
+
+
+\newpage
+\KOMAoptions{paper=portrait,pagesize}
+\recalctypearea
 
 \begin{table}[htbp]
 \centering
@@ -181,6 +209,8 @@ LIBSVM & This page contains many classification, regression, multi-label and str
 Center for Applied Internet Data Analysis (CAIDA) Datasets & Internet measurement with collaboration of numerous institutions, academics, commercial and noncommercial contributors, including anonymized Internet traces, Code Red worm propagation, passive traces on high-speed links \href{http://www.caida.org/projects/trends/imdc/}{link} \tabularnewline \hline
 \end{tabular}
 \end{table} 
+
+
 \FloatBarrier
 
 En cada data set se definen unas parametros (features) como la IP origen, la IP destino, el tipo de ataque, etc. Un ejemplo se puede encontrar en el KDD Cup 1999 Data Set\citep{kdd_desc, CIDDS-001}.
