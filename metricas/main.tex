@@ -17,8 +17,8 @@
 \usepackage{tabularx}
 \usepackage{placeins}
 \usepackage[paper=portrait,pagesize]{typearea}
-
-
+\usepackage{soul}
+\usepackage[colorinlistoftodos]{todonotes}
 
  	
 % Ruta de las graficas
@@ -98,16 +98,16 @@ Prof. Danny \textsc{Múnera} % Supervisor's Name
 
 \begin{abstract}
 
-De a cuerdo al World internet usage and poblation statistics, aproximadamente un 54.4\% tienen acceso a internet \citep{internet_stats}. Como el recurso por excelencia intercambiado a traves de internet es la información, datos como estos demuestran que la información es un elemento fundamental para el funcionamiento de la sociedad. Al ser información un recurso vital debe ser protegido; sin embargo, dicha tarea es cada vez mas desafiante debido a la mayor facilidad, numero y sofisticación de los ataques actualmente existentes. Para hacer frente éstos se han creado diferentes sistemas de seguridad como firewalls, antivirus, IDS e IPS entre otros.
+De a cuerdo al World internet usage and poblation statistics, aproximadamente un 54.4\% tienen acceso a internet \citep{internet_stats}. Como el recurso por excelencia intercambiado a traves de internet es la información este debe ser protegido; sin embargo, dicha tarea es cada vez mas desafiante debido a la mayor facilidad, numero y sofisticación de los ataques actualmente existentes. Para hacer frente éstos se han creado diferentes sistemas de seguridad como firewalls, antivirus, IDS e IPS entre otros.
 
-Un sistema de seguridad puede ser visto como una caja negra con unas entradas (datos de red: trafico de red, logs, reportes de hardware, etc.), unas salidas (alarmas, reportes de red, logs) y un proceso, cuya finalidad es actuar sobre las entradas, procesarlas y generar las salidas necesarias. Como existen una gran cantidad de ataques y defensas es necesario definir con claridad lo que hará el sistema de seguridad. Para el presente caso, el sistema de seguridad a tratar se restringirá a los sistemas de detección de intrusiones (IDS) y el ataque a explorar, será el ataque de denegación de servicios (DoS).
+Un sistema de seguridad puede ser visto como una caja negra con unas entradas (trafico de red, logs, reportes de hardware, etc.), unas salidas (alarmas, reportes de red, logs) y un proceso cuya finalidad es actuar sobre las entradas, procesarlas y generar las salidas necesarias \todo{deficion de sistema de seguridad incompleta}. Como punto de partida es necesario definir el sistema haciendo las restricciónes necesarias en cuanto a los mecanismos de ataque y defensa. Para el presente caso, el sistema de seguridad a tratar se restringirá a los sistemas de detección de intrusiones (IDS) y el ataque a explorar, será el ataque de denegación de servicios (DoS). 
  
 \end{abstract}
 
 \section{Objetivos}
 
 \begin{enumerate}
-\item Describir de manera consista diagrama de bloques de un sistema de seguridad.
+\item Describir de manera consista el diagrama de bloques de un sistema de seguridad.
 \item Hacer un estudio breve de entradas de trafico asociado con ataques de denegacion de servicio.
 \item Hacer un inventario a partir de la literatura de algunas metricas del ataque.
 \item Cosultar como obtener las metricas.
@@ -115,14 +115,14 @@ Un sistema de seguridad puede ser visto como una caja negra con unas entradas (d
 
 \section{Introducción}
 
-En la figura 1 de muestra el diagrama de bloques de un sistema de seguridad simplificado que se divide en los siguientes componentes:
+En la figura 1 de muestra el diagrama de bloques \todo{Puede que sea mejor modificar la figura (ver cuaderno)} de un sistema de seguridad simplificado que se divide en los siguientes componentes:
 \begin{enumerate}
-\item \textbf{Preprocesamiento}: Componente que procesa los datos de entrada (datos de red sin procesar) para extraer sus principales caracteristicas con el objetivo de generar una representación equivalente pero mas reducida (vectores caracteristicos) mas apropiada para etapas de procesamiento posteriores.
-\item \textbf{Alarma}: este componentes los datos caracteristicos resultantes de la etapa de preproceamiento y lanza alarmas de red (logs que reporta eventos, reportes de red, etc) con el fin de indicar a los administradores posibles problemas en la red. El papel de las alarmas no se limita meramente al de indicadores, tambien pueden ser empleadas como entradas adicionales al componente de procesamiento tal y como se muestra en la figura 1.
-\item \textbf{Procesamiento}: este componente lleva a cabo acciones de control (bloquear trafico, limitar ancho de banda, reconfigurar la red, aislar equipos infectados, etc) con el fin de mitigar problemas en la red sin intervención humana.
+\item \textbf{Preprocesamiento}: Componente que procesa los datos de entrada (datos de red sin procesar) para extraer sus principales caracteristicas con el objetivo de generar una representación equivalente pero mas reducida (datos o vectores caracteristicos) y apropiada para etapas de procesamiento posteriores.
+\item \textbf{Alarma}: tal y como se muestra en la figura 1, este componente toma los datos caracteristicos y lanza alarmas de red (logs que reporta eventos, reportes de red, etc) con el fin de indicar a los administradores posibles problemas en la red. El papel de las alarmas no se limita meramente al de indicadores, tambien pueden ser empleadas como entradas adicionales a un componente de procesamiento posterior para posterior analisis.
+\item \textbf{Procesamiento}: \todo{posible renombramiento de este componente} este componente lleva a cabo acciones de control (bloquear trafico, limitar ancho de banda, reconfigurar la red, aislar equipos infectados, lanzar indicadores de alarma, etc) con el fin de mitigar problemas en la red sin intervención humana.
 \end{enumerate}
 
-En el presente reporte se hará enfasis en las fuentes empleadas para generar datos de entrada y las diferentes herramientas empleadas para su analisis, restringiendo el estudio a los ataques de denegación de servicio. Finalmente, el documento culminará con una sección dedicada a las discuciones y conclusiones.
+Al momento de analizar y probar una propuesta de un sistema de seguridad, una de las limitaciones con las que se cuenta esta relacionada con la disponibilidad de datos de tráfico reales. Para tratar este problema, el presente documento explora diferentes alternativas (como data sets y generadores de tráfico) que, de acuerdo a la literatura pueden ofrecer una manera aceptable de imitar una fuente de tráfico real cuando se carece de esta. Posteriormente, se exploran metricas de analisis de tráfico tratando de hacer enfasis en las mas relevantes para los ataques de denegación de servicio. Finalmente, el documento culminará con una sección dedicada a las discuciones y conclusiones.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -130,7 +130,6 @@ En el presente reporte se hará enfasis en las fuentes empleadas para generar da
 \caption{Sistema de seguridad simplificado}
 \end{center}
 \end{figure}
-
 
 \section{Entradas}
 
@@ -165,6 +164,27 @@ En lo que respecta al presente documento, y tal como se muestra en la figura 2, 
 En lo que respecta al trafico de red existen varios datasets (conjunto de datos) relacionados con difentes ataques tales como los que se muestran en la siguiente tabla:
 
 % https://tex.stackexchange.com/questions/337/how-to-change-certain-pages-into-landscape-portrait-mode
+
+1. Hablar del os labeled and unlabeled --> (http://www.unb.ca/cic/datasets/ids.html)
+2. De los parametros propios, de las trazas.
+
+Para que se usan y como serían de utilidad en nuestro caso.
+
+
+
+-------------------------------------------------
+
+REORDENAR
+En cada data set se definen unas parametros (features) como la IP origen, la IP destino, el tipo de ataque, etc. Un ejemplo se puede encontrar en el KDD Cup 1999 Data Set\citep{kdd_desc, CIDDS-001}.
+
+La utilidad de los datasets radica en su amplio uso en areas de investigacion relacionadas con machine learning (ML) y sistemas de intrucion (IDS) \citep{using_kdd} lo que da pie para la utilización de uno de estos dataset con el fin de llevar a cabo la evaluación del sistema de seguridad propuesto. Sin embargo esto abre interrogantes como:
+\begin{itemize}
+\item ¿Como llevar a cabo un montaje experimental que haga uso de un dataset?
+\item ¿Será necesario el uso de todos los parametros de un dataset?, ¿Cuales serian los mas relevantes? 
+\item ¿Que se puede lograr empleando un dataset?
+\end{itemize}
+----------------------------------------------------------------
+
 
 \newpage
 \KOMAoptions{paper=landscape,pagesize}
@@ -251,9 +271,6 @@ N/A &
 L 
 \tabularnewline \hline
 
-
- 
-
 \end{tabular}
 \end{table} 
 
@@ -262,15 +279,6 @@ L
 \recalctypearea
 
 \FloatBarrier
-
-En cada data set se definen unas parametros (features) como la IP origen, la IP destino, el tipo de ataque, etc. Un ejemplo se puede encontrar en el KDD Cup 1999 Data Set\citep{kdd_desc, CIDDS-001}.
-
-La utilidad de los datasets radica en su amplio uso en areas de investigacion relacionadas con machine learning (ML) y sistemas de intrucion (IDS) \citep{using_kdd} lo que da pie para la utilización de uno de estos dataset con el fin de llevar a cabo la evaluación del sistema de seguridad propuesto. Sin embargo esto abre interrogantes como:
-\begin{itemize}
-\item ¿Como llevar a cabo un montaje experimental que haga uso de un dataset?
-\item ¿Será necesario el uso de todos los parametros de un dataset?, ¿Cuales serian los mas relevantes? 
-\item ¿Que se puede lograr empleando un dataset?
-\end{itemize}
 
 \subsubsection{Herramientas para lanzar ataques de denegacion de servicio}
 
