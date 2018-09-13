@@ -117,7 +117,7 @@ Un sistema de seguridad puede ser visto como una caja negra con unas entradas (t
 
 En la figura 1 de muestra el diagrama de bloques \todo{Puede que sea mejor modificar la figura (ver cuaderno)} de un sistema de seguridad simplificado que se divide en los siguientes componentes:
 \begin{enumerate}
-\item \textbf{Preprocesamiento}: Componente que procesa los datos de entrada (datos de red sin procesar) para extraer sus principales caracteristicas con el objetivo de generar una representación equivalente pero mas reducida (datos o vectores caracteristicos) y apropiada para etapas de procesamiento posteriores.
+\item \textbf{Preprocesamiento}: Componente que procesa los datos de entrada (datos de red sin procesar) para extraer sus principales caracteristicas con el objetivo de generar una representación equivalente pero mas reducida (datos o vectores caracteristicos, estadisticas) y apropiada para etapas de procesamiento posteriores.
 \item \textbf{Alarma}: tal y como se muestra en la figura 1, este componente toma los datos caracteristicos y lanza alarmas de red (logs que reporta eventos, reportes de red, etc) con el fin de indicar a los administradores posibles problemas en la red. El papel de las alarmas no se limita meramente al de indicadores, tambien pueden ser empleadas como entradas adicionales a un componente de procesamiento posterior para posterior analisis.
 \item \textbf{Procesamiento}: \todo{posible renombramiento de este componente} este componente lleva a cabo acciones de control (bloquear trafico, limitar ancho de banda, reconfigurar la red, aislar equipos infectados, lanzar indicadores de alarma, etc) con el fin de mitigar problemas en la red sin intervención humana.
 \end{enumerate}
@@ -133,21 +133,29 @@ Al momento de analizar y probar una propuesta de un sistema de seguridad, una de
 
 \section{Entradas}
 
+De todos los tipos de entradas existentes (trafico de red, carga de memoria, logs, puertos abiertos, etc), solo unas cuantas son empleadas en un determinado sistema de seguridad. Las entradas utilizadas dependen del tipo de sistema implentado (antivirus, IDS, IPS, firewall, etc). Asi, por ejemplo, antivirus no empleará las mismas entradas que un IDS. 
 
+Teniendo en cuenta lo anterior, el primer paso es definir el tipo de sistema a implementar, que, para el caso es el IDS. Un IDS, es un sistema cuya finalidad es evaluar el tráfico de red en busca de amenazas y lanzar alarmas en caso de detección de un patrón de tráfico anormal.
 
-Un sistema de seguridad puede procesar diferentes tipos de entradas (trafico de red, carga de memoria, logs, puertos abiertos, etc). Existen además, diferentes tipos de sistemas de seguridad (antivirus, firewalls, IDS, IPS, etc.) los cuales, de acuerdo a unas entradas determinadas realizan tareas para proteger, desde equipos de computo hasta redes de posibles ataques. 
-
-De todas las entradas posibles, solo unas cuandas son empleadas y dependen especificamente de la tarea llevada a cabo por el sistema de seguridad; asi por ejemplo, las entradas para un antivirus no serán las mismas que para un sistema de detección de intruciones (IDS). \todo{Reorganizar los dos parrafos anteriores, mucha carreta para decir algo concreto}
-
-\hl{
-QUE SE QUIERE DECIR EN EL ANTERIOR PARRAFO: La idea es decir que de acuerdo a lo que haga el sistema (ids, ips), hay informacion de entrada mas relevante por lo que es bueno saber de todas las posibilidades cual es la mejor.
-}
-
-Lo anterior plantea una primera restricción ¿Que sistema de seguridad se va a implementar? Pues bien, para el caso, se hará enfasis en los IDS que son sistemas
-cuya finalidad es evaluar el tráfico de red en busca de amenazas y lanzar alarmas en caso de detección de un patrón de tráfico anormal.
-
-Cuando se define un IDS, es necesario definir el tráfico de entrada a emplear. Por un lado por que esto facilitará las pruebas y evaluación de dicho sistema y por el otro, por que permitira un mejor control de las condiciones experimentales. Adicionalmente, debido al gran numero de ataques es bueno restringir el ataque se hará enfasis, siendo el ataque de Denegación de servicio (DoS) el elegido para este caso. Para poder generar tráfico DoS existen un gran numero de herramientas de diferentes tipos \citep{dos_tools,net_attacks_taxonomy}. En el presente documento, tomando como base la literatura relacionada con el tema, se definieron las siguientes tres fuentes de tráfico tal y como se muestra en la figura 2:
+Una vez definido el sistema de seguridad, el siguiente paso es determinar de todas las entradas existentes cuales utilizar, siendo la entrada para el caso el \textbf{trafico de red}. Este se clasifica de la siguiente manera:
 \begin{itemize}
+\item \textbf{Trafico real}: En este caso el tráfico es generado por maquinas reales o virtuales conectados a la red. 
+\item \textbf{Trafico sintético}: En este caso el tráfico es generado por una aplicación que simula el comportamiento del trafico generado por una maquina real. 
+\end{itemize}
+
+Finalmente, como un mismo tipo de entrada puede estar asociada a muchos tipos de ataques, es necesario definir con claridad el ataque en el que se hará énfasis, siendo para el caso, el ataque de Denegación de servicio (DoS) el elegido.
+
+En conclusión y resumiendo lo anterior, la defición de las entradas a emplear en un sistema de seguridad se reduce a los siguientes tres pasos básicos:
+\begin{enumerate}
+\item Definir el sistema de seguridad a emplear.
+\item Definir de acuerdo al paso uno, las entradas que el sistema empleará.
+\item Definir el ataque que se analizará.
+\end{enumerate}
+
+Con estos tres items definidos representados por la triada \textbf{[ herramienta, tipo de entrada, tipo de ataque ]} que para el caso es \textbf{[ IDS, tráfico de datos, DoS ]}, se tiene la información suficiente para empezar a definir de manera más específica la fuente que se empleará como entrada en el sistema. 
+
+De acuerdo a algunas fuentes de literatura consultadas \citep{dos_tools,net_attacks_taxonomy} la generación de tráfico de entrada asociado con ataques de denegación de servicio simples o distribuidos (DoS o DDoS) puede realizarse empleando diferentes tipos de fuentes, las cuales se pueden agrupar en los siguientes tres tipos:
+ \begin{itemize}
 \item Datasets
 \item Herramientas de geneneracion de ataques de denegación de servicio.
 \item Generadores de tráfico.
@@ -163,7 +171,7 @@ En las siguientes secciones se explicará con un poco mas de detalle cada una de
 \end{figure}
 
 
-\subsection{Fuentes de generación de ataques de degación de servicio}
+\subsection{Fuentes de generación de ataques de degación de servicio}\todo{Aqui vamos}
 
 En lo que respecta al presente documento, y tal como se muestra en la figura 2, las fuentes de generación de tráfico hacen referencia a las aplicaciónes de usuario para generación de trafico, generadores de tráfico (scripts y codigo fuente) y datasets (conjuntos de datos) que pueden ser seleccionadas como entradas con el objetivo de probar y evaluar un sistema. A continuación, se describirá con un poco mas de detalle cada una de las posibles fuentes que pueden ser tomadas como entradas haciendo énfasis en las aplicaciones existentes dentro de cada una de las categorias anteriormente mencionadas.
 
