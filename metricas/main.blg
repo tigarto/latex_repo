@@ -6,45 +6,45 @@ Database file #1: referencias/bibliografia.bib
 Warning--to sort, need author or key in internet_stats
 Warning--to sort, need author or key in kdd_desc
 Warning--empty journal in dos_tools
-You've used 6 entries,
+You've used 7 entries,
             2118 wiz_defined-function locations,
-            533 strings with 4978 characters,
-and the built_in function-call counts, 1746 in all, are:
-= -- 166
-> -- 69
+            539 strings with 5158 characters,
+and the built_in function-call counts, 2122 in all, are:
+= -- 203
+> -- 87
 < -- 0
-+ -- 29
-- -- 22
-* -- 121
-:= -- 280
-add.period$ -- 17
-call.type$ -- 6
-change.case$ -- 29
++ -- 36
+- -- 28
+* -- 151
+:= -- 343
+add.period$ -- 20
+call.type$ -- 7
+change.case$ -- 35
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 58
-empty$ -- 155
-format.name$ -- 22
-if$ -- 369
+cite$ -- 10
+duplicate$ -- 69
+empty$ -- 184
+format.name$ -- 28
+if$ -- 447
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 4
-newline$ -- 32
-num.names$ -- 8
-pop$ -- 38
+int.to.str$ -- 7
+missing$ -- 5
+newline$ -- 37
+num.names$ -- 10
+pop$ -- 42
 preamble$ -- 1
-purify$ -- 23
+purify$ -- 28
 quote$ -- 0
-skip$ -- 43
+skip$ -- 50
 stack$ -- 0
-substring$ -- 127
-swap$ -- 5
+substring$ -- 162
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 24
+type$ -- 28
 warning$ -- 3
-while$ -- 12
-width$ -- 7
-write$ -- 61
+while$ -- 15
+width$ -- 8
+write$ -- 72
 (There were 3 warnings)

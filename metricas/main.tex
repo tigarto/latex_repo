@@ -19,6 +19,7 @@
 \usepackage[paper=portrait,pagesize]{typearea}
 \usepackage{soul}
 \usepackage[colorinlistoftodos]{todonotes}
+\usepackage{verbatim} 
 
  	
 % Ruta de las graficas
@@ -171,11 +172,34 @@ En las siguientes secciones se explicará con un poco mas de detalle cada una de
 \end{figure}
 
 
-\subsection{Fuentes de generación de ataques de degación de servicio}\todo{Aqui vamos}
+\subsection{Fuentes de generación de ataques de degación de servicio}
 
+En la figura 2, se muestran las posibles fuentes que pueden ser seleccionadas para la generacion de tráfico de red previamente mencionadas. Tal y como se muestra en dicha fígura, inicialmente se define el tipo de fuente que se va a emplear en el experimento para la generación del tráfico de entrada que se aplicará al sistema de seguridad ya definido.
+
+Una vez hecho lo anterior, se aplica este tráfico de entrada a dicho sistema con el objetivo de probarlo, evaluarlo y dado el caso (si se emplean tecnicas de machine learning) entrenarlo. 
+
+A continuación se aborda con mas detalle cada una de las fuentes mostradas en la figura 2.
+
+
+\begin{comment}
+
+/------------------------ PARTE COMENTADA ---------------------------/
 En lo que respecta al presente documento, y tal como se muestra en la figura 2, las fuentes de generación de tráfico hacen referencia a las aplicaciónes de usuario para generación de trafico, generadores de tráfico (scripts y codigo fuente) y datasets (conjuntos de datos) que pueden ser seleccionadas como entradas con el objetivo de probar y evaluar un sistema. A continuación, se describirá con un poco mas de detalle cada una de las posibles fuentes que pueden ser tomadas como entradas haciendo énfasis en las aplicaciones existentes dentro de cada una de las categorias anteriormente mencionadas.
+\end{comment}
 
-\subsubsection{Datasets}
+\subsubsection{Datasets} \todo{Aqui vamos}
+
+Un dataset se define como una coleccion de datos (items) distretos y relacionados que tiene diferentes significados según el escenario y que fueron utilizados para alguna clase de experimento o analisis \citep{datasets_availability}. 
+
+\hl{
+0. Carencia de obtener y trabajar con trafico real y en tiempo real. Los datasets surgen como una posibilidad.\\
+1. Existencia de muchos dasets (referencias) \\
+2. Restriccion a casos de trafico ---- DoS. \\
+3. Introducir la tabla en la cual se trate de cumplir con el caso 2 anteriormente mostrado. \\
+4. Hablar de la tabla. \\
+5. Sacar conclusiones, sobre todo por que los datasets son datos reales pero no estna en tiempo de ejeciocuin. \\
+}
+
 
 En lo que respecta al trafico de red existen varios datasets (conjunto de datos) relacionados con difentes ataques tales como los que se muestran en la siguiente tabla:
 
