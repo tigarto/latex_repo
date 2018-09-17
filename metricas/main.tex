@@ -20,7 +20,8 @@
 \usepackage{soul}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{verbatim} 
-
+\usepackage{caption}
+\usepackage{booktabs}
  	
 % Ruta de las graficas
 \graphicspath{{figuras/}}
@@ -187,44 +188,18 @@ A continuación se aborda con mas detalle cada una de las fuentes mostradas en l
 En lo que respecta al presente documento, y tal como se muestra en la figura 2, las fuentes de generación de tráfico hacen referencia a las aplicaciónes de usuario para generación de trafico, generadores de tráfico (scripts y codigo fuente) y datasets (conjuntos de datos) que pueden ser seleccionadas como entradas con el objetivo de probar y evaluar un sistema. A continuación, se describirá con un poco mas de detalle cada una de las posibles fuentes que pueden ser tomadas como entradas haciendo énfasis en las aplicaciones existentes dentro de cada una de las categorias anteriormente mencionadas.
 \end{comment}
 
-\subsubsection{Datasets} \todo{Aqui vamos}
+\subsubsection{Datasets} 
 
-Un dataset se define como una coleccion de datos (items) distretos y relacionados que tiene diferentes significados según el escenario y que fueron utilizados para alguna clase de experimento o analisis \citep{datasets_availability}. 
+Un dataset se define como una coleccion de datos (items) distretos y relacionados con diferentes significados según el escenario y que fueron utilizados para alguna clase de experimento o analisis \citep{datasets_availability}. 
 
-\hl{
-0. Carencia de obtener y trabajar con trafico real y en tiempo real. Los datasets surgen como una posibilidad.\\
-1. Existencia de muchos dasets (referencias) \\
-2. Restriccion a casos de trafico ---- DoS. \\
-3. Introducir la tabla en la cual se trate de cumplir con el caso 2 anteriormente mostrado. \\
-4. Hablar de la tabla. \\
-5. Sacar conclusiones, sobre todo por que los datasets son datos reales pero no estna en tiempo de ejeciocuin. \\
-}
+En la red existe diferentes fuentes de las cuales se pueden obtener datasets de manera libre \citep{UCI, kaggle, awesome_public_datasets}. En este caso, como la disciplina de interes se centra en datos asociados a tráfico de red, la busqueda y elección de datasets que cumplan con este requisito es aun una tarea desafiante en gran parte, debido a la falta de un sitio centralizado y especializado donde sea facil obtenter este tipo de datos. 
 
+Para tratar esta dificultad, Cinthya Grajeda et al \citep{datasets_availability}, presentan un overview de datasets relevantes en analisis digital forense. Asi mismo, recopilan toda esta informacion en un repositorio centralizado \citep{ds_cyber_forensics} para facilitar la busqueda, actualización y uso por parte de la comunidad, de datasets relacionados con escenarios de seguridad. De los datasets allí presentados, los únicos que representan algún interés para nuestro caso, son aquellos relacionados con trafico de red. En la tabla 1 se muestran algunos datasets de interes que pueden ser empleados como fuentes de datos para la reproducción de experimentos relacionados con los ataques de denegación de servicios.
 
-En lo que respecta al trafico de red existen varios datasets (conjunto de datos) relacionados con difentes ataques tales como los que se muestran en la siguiente tabla:
+Las pricipales caracteristicas mostradas en la tabla 1 para cada dataset, estan relacionadas con el tipo de datos que los componen (archivos pcap, logs, etc) que son de vital importancia por que determinan los parámetros (variables: IP origen, IP destino, etc) asociados a cada dato, el tamaño del dataset, la fecha de disponibilidad y si es Labeled (L) o Unlabeled (U). 
 
-% https://tex.stackexchange.com/questions/337/how-to-change-certain-pages-into-landscape-portrait-mode
-
-1. Hablar del os labeled and unlabeled --> (http://www.unb.ca/cic/datasets/ids.html)
-2. De los parametros propios, de las trazas.
-
-Para que se usan y como serían de utilidad en nuestro caso.
-
-
-
--------------------------------------------------
-
-REORDENAR
-En cada data set se definen unas parametros (features) como la IP origen, la IP destino, el tipo de ataque, etc. Un ejemplo se puede encontrar en el KDD Cup 1999 Data Set\citep{kdd_desc, CIDDS-001}.
-
-La utilidad de los datasets radica en su amplio uso en areas de investigacion relacionadas con machine learning (ML) y sistemas de intrucion (IDS) \citep{using_kdd} lo que da pie para la utilización de uno de estos dataset con el fin de llevar a cabo la evaluación del sistema de seguridad propuesto. Sin embargo esto abre interrogantes como:
-\begin{itemize}
-\item ¿Como llevar a cabo un montaje experimental que haga uso de un dataset?
-\item ¿Será necesario el uso de todos los parametros de un dataset?, ¿Cuales serian los mas relevantes? 
-\item ¿Que se puede lograr empleando un dataset?
-\end{itemize}
-----------------------------------------------------------------
-
+\todo{Como se puede enfatizar que este es el ultimo parrafo, se puede deja asi o es necesario hacer este enfasis}
+El uso de datasets facilita el diseño de pruebas experimentales pues, permite la aplicación de una misma entrada (dataset como tal) ante diferentes condiciones y configuraciónes del sistema de seguridad estudiado. Ademas, los datasets son ampliamente usados en areas de investigacion con machine learning (ML) y sistemas de intrucion (IDS) \citep{using_kdd} lo cual hace que valga la pena que estos sean empleados como una fuente de entrada al definir un experimento.
 
 \newpage
 \KOMAoptions{paper=landscape,pagesize}
@@ -312,6 +287,7 @@ L
 \tabularnewline \hline
 
 \end{tabular}
+\caption{Principales caracteristicas de algunos datasets para hacer pruebas con ataques de denegacion de sevicio} \label{tab:sometab}
 \end{table} 
 
 \newpage
@@ -320,7 +296,7 @@ L
 
 \FloatBarrier
 
-\subsubsection{Herramientas para lanzar ataques de denegacion de servicio}
+\subsubsection{Herramientas para lanzar ataques de denegacion de servicio} \todo{Aqui vamos - Nota falta ponerle titulo a la tabla}
 
 Existe un gran numero de herramientas para realizar ataques. Mas exactamente en el caso de los ataques de denegación de servicios, la obtención y uso de estas es sumamente facil gracias a la existencia de portales como \href{http://sectools.org/}{sectools} o distribuciones linux enfocadas en seguridad como kali que traen muchas de estas aplicaciones por defecto. La siguiente tabla \citep{dos_tools} muestran algunas aplicaciones empleadas para lanzar ataques de denegación de servicio de manera resumida:
 
@@ -453,6 +429,13 @@ total len & Longitud total (la verdad no se de que???) \tabularnewline \hline
 flags & bandereas \tabularnewline \hline
 \end{tabular}
 \end{table}
+
+\section{Experimento}
+
+Seccion dedicada a describir pasos importantes sobre el experimento (ojo con los enlaces comentados):
+%http://shodhganga.inflibnet.ac.in/bitstream/10603/40658/10/10_chapter%205.pdf
+%https://www.cs.waikato.ac.nz/ml/weka/
+
 
 \section{Salidas}
 

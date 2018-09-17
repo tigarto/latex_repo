@@ -1,12 +1,28 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{awesome_public_datasets}
+Awesome public datasets.
+\newblock (Date last accessed 15-September-2018).
+
+\bibitem{ds_cyber_forensics}
+Datasets for cyber forensics.
+\newblock (Date last accessed 15-September-2018).
 
 \bibitem{internet_stats}
 Internet world stats.
 \newblock (Date last accessed 21-August-2018).
 
+\bibitem{kaggle}
+Kaggle.
+\newblock (Date last accessed 15-September-2018).
+
 \bibitem{kdd_desc}
 Kdd cup 1999 data data set.
 \newblock (Date last accessed 9-August-2018).
+
+\bibitem{UCI}
+Uci machine learning repository.
+\newblock (Date last accessed 15-September-2018).
 
 \bibitem{dos_tools}
 Sunny Behal and Krishan Saluja.
