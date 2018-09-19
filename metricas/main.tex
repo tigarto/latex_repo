@@ -296,48 +296,101 @@ L
 
 \FloatBarrier
 
-\subsubsection{Herramientas para lanzar ataques de denegacion de servicio} \todo{Aqui vamos - Nota falta ponerle titulo a la tabla}
+\subsubsection{Herramientas para lanzar ataques de denegacion de servicio} 
 
-Existe un gran numero de herramientas para realizar ataques. Mas exactamente en el caso de los ataques de denegación de servicios, la obtención y uso de estas es sumamente facil gracias a la existencia de portales como \href{http://sectools.org/}{sectools} o distribuciones linux enfocadas en seguridad como kali que traen muchas de estas aplicaciones por defecto. La siguiente tabla \citep{dos_tools} muestran algunas aplicaciones empleadas para lanzar ataques de denegación de servicio de manera resumida:
+Existe un gran numero de herramientas para realizar ataques. Mas exactamente en el caso de los ataques de denegación de servicios, la obtención y uso de estas es sumamente facil gracias a la existencia de portales como \href{http://sectools.org/}{sectools} o distribuciones linux enfocadas en seguridad como kali que traen muchas de estas aplicaciones por defecto. La siguiente tabla \citep{dos_tools} muestran algunas aplicaciones empleadas para lanzar ataques de denegación de servicio de manera resumida:\todo{Agregando nueva tabla}
 
-\begin{table}[htbp]
-\centering
-\begin{tabular}{|p{0.2\linewidth}|p{0.4\linewidth}|p{0.2\linewidth}|}
-\hline
-\multicolumn{1}{|c|}{\textit{\textbf{Dataset}}} & \multicolumn{1}{c|}{\textit{\textbf{Descripción}}} & \multicolumn{1}{c|}{\textit{\textbf{Tipo de ataque}}} \tabularnewline \hline
-LOIC (Low Orbit Ion Cannon) & herramienta openasource diseñada que
-permite realizar ataques de denegacion de servicio enviando un gran cantidad de paquetes de red con el proposito de saturar el ancho de banda & tcp, udp, icmp,http \tabularnewline \hline
-HOIC (High Orbit Ion Cannon) & herramienta para lanzar hasta 256 ataques de denegacion (a diferentes dominios) de servicio de manera paralela mediante el envio de GET flood and POST requeststs & http \tabularnewline \hline
-HULK (HTTP Unbearable Load King) & herramienta para dar de baja servidores web empleando TCP SYN flood and multi threaded HTTP GET flood requests. Esta herramienta usa varias obfuscation technique para limitar la capacidad del objetivo de mitigar el ataque. & http \tabularnewline \hline
-Tor’s Hammer & Es una herramienta escrita en python diseñada para agotar el ancho de banda y los recursos de la victima. Se caracteriza por correr en una red ToR usando direcciones IPs aleatorias con el fin de dificultar el rastreo del atacante. & http \tabularnewline \hline
-\end{tabular}
-\end{table}
-
-
+\newpage
+\KOMAoptions{paper=landscape,pagesize}
+\recalctypearea
 
 \begin{table}[htbp]
 \centering
-\begin{tabular}{|p{0.2\linewidth}|p{0.4\linewidth}|p{0.2\linewidth}|}
-\hline
-\multicolumn{1}{|c|}{\textit{\textbf{Dataset}}} & \multicolumn{1}{c|}{\textit{\textbf{Descripción}}} & \multicolumn{1}{c|}{\textit{\textbf{Tipo de ataque}}} \tabularnewline \hline
-RUDY (R-U-dead-Yet) & Es una herramienta escrita en python usada para realizar slow attacks con el fin de comprometer la disponibilidad de servidores web. Los ataques realizados empleando esta herramienta, se caracterizan por abrir conexiones POST HTTP simultáneas un servidor HTTP y, retrazar el envío del cuerpo de la solicitud POST lo cual hace que los recursos del servidor se saturen. El envio pequetes pequeños a un ritmo tan lento (para mantener la conexion abierta y al servidor ocupado) hace que la deteccion de este tipo de ataques sea dificil de detectar comparado con los ataques DoS por inundacion. & http \tabularnewline \hline
-Golden-Eye & Es una herramienta escrita en python que permite realizar ataques http flood con el objetivo e agotar los recursos de la victima, es ideal para probar websides pero no es efectiva en el  mundo real los ataques lanzados con esta herramienta son faciles de detectar por defensas perimetrales.  & http \tabularnewline \hline
-TFN(Tribe flood network) & es una herramienta con la capacidad de lanzar multiples ataques DDoS usando UDP flood, Smurf attack y TCP SYN flood. & tcp,udp,icmp \tabularnewline \hline
-\end{tabular}
-\end{table}
+\begin{tabular}{|p{0.1\linewidth}|p{0.1\linewidth}|p{0.2\linewidth}|p{0.1\linewidth}|p{0.1\linewidth}|}\hline
+\multicolumn{1}{|c|}{\textit{\textbf{Herramienta}}} & 
+\multicolumn{1}{c|}{\textit{\textbf{Tipo de trafico}}} &
+\multicolumn{1}{|c|}{\textit{\textbf{Método de ataque}}} & 
+\multicolumn{1}{|c|}{\textit{\textbf{Tipo de ataque DoS/DDoS}}} &
+\multicolumn{1}{|c|}{\textit{\textbf{Impacto}}} \tabularnewline \hline
 
-\begin{table}[htbp]
-\centering
-\begin{tabular}{|p{0.2\linewidth}|p{0.4\linewidth}|p{0.2\linewidth}|}
-\hline
-\multicolumn{1}{|c|}{\textit{\textbf{Dataset}}} & \multicolumn{1}{c|}{\textit{\textbf{Descripción}}} & \multicolumn{1}{c|}{\textit{\textbf{Tipo de ataque}}} \tabularnewline \hline
-Slowloris & es una herramienta para lanzar ataques DoS enviando continuamente TCP SYN requests a la victima con el proposito de establecer muchas conexiones abiertas con la victima tanto como sea posible lo que satura la capacidad esta para recibir nuevas conexiones de los clientes. & http \tabularnewline \hline
-Ddosim & Es una herramienta para generar ataques DDoS que usa direcciones IP aleatorias para simular varios zombies loc cuales crean conexiones full TCP con la victima. Una vez establecida la conexion la herramienta lanza ataques como HTTP-GET flood para hacerla no disponible. & tcp,smtp ,http,udp \tabularnewline \hline
-Pyloris & Esta herramienta permite al usuario realizar ataques DoS sobre un servicio. Puede trabajar con varios protocolos, incluyendo HTTP, FTP, SMTP, IMAP, y Telnet. & --- \tabularnewline \hline
-\end{tabular}
-\end{table}
+GoldenEye &
+HTTP & 
+GET Flood, POST Flood, Random Flood  & 
+Aplicacion & 
+Recurso
+\tabularnewline \hline
 
-\FloatBarrier
+LOIC (Low Orbit Ion Cannon) &
+HTTP, TCP, UDP & 
+GET Flood, TCP Flood, UDP Flood  & 
+Aplicacion & 
+Recurso
+\tabularnewline \hline
+
+R.U.DY (R U Dead Yet?) &
+HTTP & 
+HTTP POST  & 
+Aplicacion & 
+Recurso
+\tabularnewline \hline
+
+Slowloris &
+HTTP & 
+HTTP GET   & 
+Aplicacion & 
+Recurso
+\tabularnewline \hline
+
+Dirt Jumper &
+HTTP & 
+POST Flood, SYN Flood, HTTP Flood & 
+Aplicacion & 
+Recurso
+\tabularnewline \hline
+
+Tor’s Hammer &
+HTTP & 
+slow POST & 
+Aplicacion & 
+Recurso
+\tabularnewline \hline
+
+Nuclear DDoSer &
+http & 
+Slowloris, Slow POST & 
+Aplicacion & 
+Recurso
+\tabularnewline \hline
+
+Railgun &
+http & 
+Slowloris o Slow POST & 
+Aplicacion & 
+Recurso
+\tabularnewline \hline
+
+High Orbit Ion Cannon (HOIC) &
+http & 
+POST Flood, GET Flood & 
+Aplicacion & 
+Recurso
+\tabularnewline \hline
+
+HULK (HTTP Unbearable Load King) &
+HTTP & 
+TCP SYN flood, HTTP GET flood & 
+Aplicacion & 
+Recurso
+\tabularnewline \hline
+
+\end{tabular}
+\caption{Principales caracteristicas de algunos datasets para hacer pruebas con ataques de denegacion de sevicio} \label{tab:sometab}
+\end{table} 
+
+\newpage
+\KOMAoptions{paper=portrait,pagesize}
+\recalctypearea
+
 
 Como existen varios tipos de ataques de denegación de servicio; conocer la herramienta, permite definir el tipo de ataque en el que esta se enfoca y por ende es un paso fundamental al definir la entrada que sera empleada en el experimento.
 
@@ -436,6 +489,14 @@ Seccion dedicada a describir pasos importantes sobre el experimento (ojo con los
 %http://shodhganga.inflibnet.ac.in/bitstream/10603/40658/10/10_chapter%205.pdf
 %https://www.cs.waikato.ac.nz/ml/weka/
 
+% DDoS Experiment Methodology -- http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.134.7224&rep=rep1&type=pdf
+% Methodologies and Metrics for the Testing and Analysis of Distributed Denial of Service Attacks and Defenses --- https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1606072
+
+% Experimental evaluation of DDoS detection and prevention using opensource and commodity hardware --- https://brage.bibsys.no/xmlui/bitstream/handle/11250/2504043/16386_FULLTEXT.pdf?sequence=1
+
+% DDoS Benchmarks and Experimenter’s Workbench for the DETER Testbed --- https://www.cs.purdue.edu/homes/fahmy/papers/trident07.pdf
+
+% Automating DDoS Experimentation --- https://www.usenix.org/legacy/event/deter07/tech/full_papers/mirkovic/mirkovic.pdf
 
 \section{Salidas}
 
