@@ -22,7 +22,9 @@
 \usepackage{verbatim} 
 \usepackage{caption}
 \usepackage{booktabs}
- 	
+\usepackage{lscape}
+\usepackage{pdflscape} % https://en.wikibooks.org/wiki/LaTeX/Page_Layout
+
 % Ruta de las graficas
 \graphicspath{{figuras/}}
 
@@ -201,14 +203,15 @@ Las pricipales caracteristicas mostradas en la tabla 1 para cada dataset, estan 
 \todo{Como se puede enfatizar que este es el ultimo parrafo, se puede deja asi o es necesario hacer este enfasis}
 El uso de datasets facilita el diseño de pruebas experimentales pues, permite la aplicación de una misma entrada (dataset como tal) ante diferentes condiciones y configuraciónes del sistema de seguridad estudiado. Ademas, los datasets son ampliamente usados en areas de investigacion con machine learning (ML) y sistemas de intrucion (IDS) \citep{using_kdd} lo cual hace que valga la pena que estos sean empleados como una fuente de entrada al definir un experimento.
 
+%\newpage
+%\KOMAoptions{paper=landscape,pagesize}
+%\recalctypearea
 \newpage
-\KOMAoptions{paper=landscape,pagesize}
-\recalctypearea
-
+\begin{landscape}
 
 \begin{table}[htbp]
 \centering
-\begin{tabular}{|p{0.2\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}|}\hline
+\begin{tabular}{|p{0.2\linewidth}|p{0.2\linewidth}|p{0.1\linewidth}|p{0.1\linewidth}|p{0.1\linewidth}|}\hline
 \multicolumn{1}{|c|}{\textit{\textbf{Dataset}}} & 
 \multicolumn{1}{c|}{\textit{\textbf{Tipo de datos}}} &
 \multicolumn{1}{|c|}{\textit{\textbf{Tamaño}}} & 
@@ -290,19 +293,21 @@ L
 \caption{Principales caracteristicas de algunos datasets para hacer pruebas con ataques de denegacion de sevicio} \label{tab:sometab}
 \end{table} 
 
+\end{landscape}
 \newpage
-\KOMAoptions{paper=portrait,pagesize}
-\recalctypearea
+%\newpage
+%\KOMAoptions{paper=portrait,pagesize}
+%\recalctypearea
 
-\FloatBarrier
 
 \subsubsection{Herramientas para lanzar ataques de denegacion de servicio} 
 
 Existe un gran numero de herramientas para realizar ataques. Mas exactamente en el caso de los ataques de denegación de servicios, la obtención y uso de estas es sumamente facil gracias a la existencia de portales como \href{http://sectools.org/}{sectools} o distribuciones linux enfocadas en seguridad como kali que traen muchas de estas aplicaciones por defecto. La siguiente tabla \citep{dos_tools} muestran algunas aplicaciones empleadas para lanzar ataques de denegación de servicio de manera resumida:\todo{Agregando nueva tabla}
 
 \newpage
-\KOMAoptions{paper=landscape,pagesize}
-\recalctypearea
+%\KOMAoptions{paper=landscape,pagesize}
+%\recalctypearea
+\begin{landscape}
 
 \begin{table}[htbp]
 \centering
@@ -388,8 +393,89 @@ Recurso
 \end{table} 
 
 \newpage
-\KOMAoptions{paper=portrait,pagesize}
-\recalctypearea
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|p{0.1\linewidth}|p{0.1\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}|p{0.1\linewidth}|}\hline
+\multicolumn{1}{|c|}{\textit{\textbf{Herramienta}}} & 
+\multicolumn{1}{c|}{\textit{\textbf{Tipo de trafico}}} &
+\multicolumn{1}{|c|}{\textit{\textbf{Método de ataque}}} & 
+\multicolumn{1}{|c|}{\textit{\textbf{Tipo de ataque DoS/DDoS}}} &
+\multicolumn{1}{|c|}{\textit{\textbf{Impacto}}} \tabularnewline \hline
+
+TFN (Tribe Flood Network) &
+ICMP, TCP, UDP & 
+ICMP Flood, SYN Flood, UDP Flood and Smurf attack & 
+Por volumen & 
+Ancho de banda
+\tabularnewline \hline
+
+trin00 (o trino) &
+UDP, TCP & 
+SYN Flood, UDP flood & 
+Por volumen & 
+Ancho de banda
+\tabularnewline \hline
+
+stacheldraht &
+ICMP, TCP, UDP & 
+ICMP Flood, SYN Flood, UDP Flood and Smurf attack & 
+Por volumen & 
+Ancho de banda
+\tabularnewline \hline
+
+Hping3 &
+TCP, UDP, ICMP, RAW-IP & 
+? & 
+Por volumen & 
+Ancho de banda
+\tabularnewline \hline
+
+Ddosim &
+HTTP, TCP, SMTP & 
+Create full TCP connections, when the connection is stablised send HTTP GET request & 
+Aplicación & 
+Recurso
+\tabularnewline \hline
+
+Pyloris &
+HTTP & 
+? & 
+Aplicación & 
+Recurso
+\tabularnewline \hline
+
+Davoset &
+HTTP & 
+Abuse of Functionality & 
+Aplicación & 
+Recurso
+\tabularnewline \hline
+
+Trinity &
+TCP, UDP & 
+Flood attacks & 
+Aplicación & 
+Ancho de banda, Recurso
+\tabularnewline \hline
+
+XOIC &
+TCP, UDP, HTTP,  ICMP & 
+? & 
+Aplicación & 
+Ancho de banda, Recurso
+\tabularnewline \hline
+
+
+\end{tabular}
+\caption{Principales caracteristicas de algunos datasets para hacer pruebas con ataques de denegacion de sevicio} \label{tab:sometab}
+\end{table} 
+
+
+\end{landscape}
+\newpage
+%\KOMAoptions{paper=portrait,pagesize}
+%\recalctypearea
 
 
 Como existen varios tipos de ataques de denegación de servicio; conocer la herramienta, permite definir el tipo de ataque en el que esta se enfoca y por ende es un paso fundamental al definir la entrada que sera empleada en el experimento.
