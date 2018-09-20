@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.14)  19 SEP 2018 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.14)  19 SEP 2018 19:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1135,183 +1135,211 @@ Underfull \hbox (badness 10000) in paragraph at lines 466--467
 \OT1/cmr/m/n/12 banda,
  []
 
+
+Underfull \hbox (badness 4060) in paragraph at lines 471--471
+[]|\OT1/cmr/m/n/12 HTTP POST at-tacks,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--476
+[]|\OT1/cmr/m/n/12 THC-SSL-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 479--479
+[]|\OT1/cmr/m/n/12 Presentaci^^Son (Pro-to-col
+ []
+
+
+Underfull \hbox (badness 4060) in paragraph at lines 485--485
+[]|\OT1/cmr/m/n/12 HTTP POST at-tacks,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--488
+[]|\OT1/cmr/m/n/12 Ancho de
+ []
+
+
+LaTeX Warning: Float too large for page by 16.96875pt on input line 492.
+
 [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 492--492
+Underfull \hbox (badness 10000) in paragraph at lines 512--512
 []|\OT1/cmr/m/n/12 Bit-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--493
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
 []|\OT1/cmr/m/n/12 TCP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--493
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
 \OT1/cmr/m/n/12 UDP,
  []
 
 
-Overfull \hbox (3.97256pt too wide) in paragraph at lines 494--494
+Overfull \hbox (3.97256pt too wide) in paragraph at lines 514--514
 []|\OT1/cmr/m/n/12 packETH| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--495
+Underfull \hbox (badness 10000) in paragraph at lines 515--515
 []|\OT1/cmr/m/n/12 TCP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--495
+Underfull \hbox (badness 10000) in paragraph at lines 515--515
 \OT1/cmr/m/n/12 UDP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--495
+Underfull \hbox (badness 10000) in paragraph at lines 515--515
 \OT1/cmr/m/n/12 IP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--495
+Underfull \hbox (badness 10000) in paragraph at lines 515--515
 \OT1/cmr/m/n/12 ARP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--497
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 []|\OT1/cmr/m/n/12 ARP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--497
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 \OT1/cmr/m/n/12 DNS,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--497
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 \OT1/cmr/m/n/12 ETH-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--497
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 \OT1/cmr/m/n/12 ER-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--497
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 \OT1/cmr/m/n/12 NET,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--497
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 \OT1/cmr/m/n/12 ICMP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--497
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 \OT1/cmr/m/n/12 IGMP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--497
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 \OT1/cmr/m/n/12 IP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--497
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 \OT1/cmr/m/n/12 OSPF,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--497
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 \OT1/cmr/m/n/12 RIP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--497
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 \OT1/cmr/m/n/12 TCP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--498
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
 []|\OT1/cmr/m/n/12 D-ITG
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--498
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
 \OT1/cmr/m/n/12 (Dis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--498
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
 \OT1/cmr/m/n/12 tributed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--498
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
 \OT1/cmr/m/n/12 In-ter-net
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--498
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
 \OT1/cmr/m/n/12 Traf-fic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--498
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
 \OT1/cmr/m/n/12 Gen-er-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--499
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 []|\OT1/cmr/m/n/12 HTTP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--500
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 []|\OT1/cmr/m/n/12 curl-
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 500--500
+Underfull \hbox (badness 1248) in paragraph at lines 520--520
 \OT1/cmr/m/n/12 miles de clientes HTTP/HTTPS y FT-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--500
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 []|\OT1/cmr/m/n/12 HTTP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--500
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 \OT1/cmr/m/n/12 HTTPS,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--500
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 \OT1/cmr/m/n/12 FTP,
  []
 
 
-Overfull \hbox (18.29042pt too wide) in paragraph at lines 489--503
+Overfull \hbox (18.29042pt too wide) in paragraph at lines 509--523
  [][] 
  []
 
 
-Overfull \hbox (2.01425pt too wide) in paragraph at lines 511--511
+Overfull \hbox (2.01425pt too wide) in paragraph at lines 531--531
 []|\OT1/cmr/m/n/12 HTTPerf| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--511
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
 []|\OT1/cmr/m/n/12 HTTP,
  []
 
 
-Overfull \hbox (18.29042pt too wide) in paragraph at lines 508--513
+Overfull \hbox (18.29042pt too wide) in paragraph at lines 528--533
  [][] 
  []
 
 
-Overfull \hbox (4.63133pt too wide) in paragraph at lines 520--521
+Overfull \hbox (4.63133pt too wide) in paragraph at lines 540--541
 []\OT1/cmr/bx/n/12 Nota\OT1/cmr/m/n/12 : Ver las her-ramien-tas rela-cionadas -
 --> http://bittwist.sourceforge.net/doc.html 
  []
@@ -1320,33 +1348,33 @@ Overfull \hbox (4.63133pt too wide) in paragraph at lines 520--521
 
 
 ] [12]
-Overfull \hbox (25.19997pt too wide) in paragraph at lines 535--544
+Overfull \hbox (25.19997pt too wide) in paragraph at lines 555--564
  [][] 
  []
 
 
-Overfull \hbox (25.19997pt too wide) in paragraph at lines 555--570
+Overfull \hbox (25.19997pt too wide) in paragraph at lines 575--590
  [][] 
  []
 
 [13] [14] [15] (./main.bbl [16]) [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 665.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 665.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 685.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 685.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 665.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 665.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 685.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 685.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 2FE1D6E0B8BD2E428DFF792C0ACF45A5;704.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 665.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 685.
  ) 
 Here is how much of TeX's memory you used:
  21514 strings out of 493029
  386031 string characters out of 6136234
- 501501 words of memory out of 5000000
+ 502501 words of memory out of 5000000
  24600 multiletter control sequences out of 15000+600000
  12521 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1360,7 +1388,7 @@ dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (18 pages, 958707 bytes).
+Output written on main.pdf (18 pages, 959018 bytes).
 PDF statistics:
  264 PDF objects out of 1000 (max. 8388607)
  226 compressed objects within 3 object streams
