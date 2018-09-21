@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 
 \bibitem{awesome_public_datasets}
 Awesome public datasets.
@@ -15,10 +15,6 @@ Internet world stats.
 \bibitem{kaggle}
 Kaggle.
 \newblock (Date last accessed 15-September-2018).
-
-\bibitem{kdd_desc}
-Kdd cup 1999 data data set.
-\newblock (Date last accessed 9-August-2018).
 
 \bibitem{UCI}
 Uci machine learning repository.
@@ -41,14 +37,6 @@ N.~Hoque, Monowar~H. Bhuyan, R.C. Baishya, D.K. Bhattacharyya, and J.K. Kalita.
 \newblock Network attacks: Taxonomy, tools and systems.
 \newblock {\em Journal of Network and Computer Applications}, 40:307 -- 324,
   2014.
-
-\bibitem{CIDDS-001}
-Abhishek Verma and Virender Ranga.
-\newblock Statistical analysis of cidds-001 dataset for network intrusion
-  detection systems using distance-based machine learning.
-\newblock {\em Procedia Computer Science}, 125:709 -- 716, 2018.
-\newblock The 6th International Conference on Smart Computing and
-  Communications.
 
 \bibitem{using_kdd}
 Atilla Özgür and Hamit Erdem.

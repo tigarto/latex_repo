@@ -3,7 +3,7 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[12pt]{article}
-\usepackage[english]{babel}
+\usepackage[spanish]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -102,31 +102,76 @@ Prof. Danny \textsc{Múnera} % Supervisor's Name
 
 \begin{abstract}
 
-De a cuerdo al World internet usage and poblation statistics, aproximadamente un 54.4\% tienen acceso a internet \citep{internet_stats}. Como el recurso por excelencia intercambiado a traves de internet es la información este debe ser protegido; sin embargo, dicha tarea es cada vez mas desafiante debido a la mayor facilidad, numero y sofisticación de los ataques actualmente existentes. Para hacer frente éstos se han creado diferentes sistemas de seguridad como firewalls, antivirus, IDS e IPS entre otros.
+De a cuerdo al World internet usage and poblation statistics,
+aproximadamente un 54.4\% tienen acceso a internet
+\citep{internet_stats}. Como el recurso por excelencia intercambiado a
+traves de internet es la información este debe ser protegido; sin
+embargo, dicha tarea es cada vez mas desafiante debido a la mayor
+facilidad, numero y sofisticación de los ataques actualmente
+existentes. Para hacer frente éstos se han creado diferentes sistemas
+de seguridad como firewalls, antivirus, IDS e IPS entre otros.
 
-Un sistema de seguridad puede ser visto como una caja negra con unas entradas (trafico de red, logs, reportes de hardware, etc.), unas salidas (alarmas, reportes de red, logs) y un proceso cuya finalidad es actuar sobre las entradas, procesarlas y generar las salidas necesarias \todo{deficion de sistema de seguridad incompleta}. Como punto de partida es necesario definir el sistema haciendo las restricciónes necesarias en cuanto a los mecanismos de ataque y defensa. Para el presente caso, el sistema de seguridad a tratar se restringirá a los sistemas de detección de intrusiones (IDS) y el ataque a explorar, será el ataque de denegación de servicios (DoS). 
+Un sistema de seguridad puede ser visto como una caja negra con unas
+entradas (trafico de red, logs, reportes de hardware, etc.), unas
+salidas (alarmas, reportes de red, logs) y un proceso cuya finalidad
+es actuar sobre las entradas, procesarlas y generar las salidas
+necesarias \todo{deficion de sistema de seguridad incompleta}. Como
+punto de partida es necesario definir el sistema haciendo las
+restricciónes necesarias en cuanto a los mecanismos de ataque y
+defensa. Para el presente caso, el sistema de seguridad a tratar se
+restringirá a los sistemas de detección de intrusiones (IDS) y el
+ataque a explorar, será el ataque de denegación de servicios (DoS).
  
 \end{abstract}
 
 \section{Objetivos}
 
 \begin{enumerate}
-\item Describir de manera consista el diagrama de bloques de un sistema de seguridad.
-\item Hacer un estudio breve de entradas de trafico asociado con ataques de denegacion de servicio.
-\item Hacer un inventario a partir de la literatura de algunas metricas del ataque.
+\item Describir de manera consista el diagrama de bloques de un
+  sistema de seguridad.
+\item Hacer un estudio breve de entradas de trafico asociado con
+  ataques de denegacion de servicio.
+\item Hacer un inventario a partir de la literatura de algunas
+  metricas del ataque.
 \item Cosultar como obtener las metricas.
 \end{enumerate}
 
 \section{Introducción}
 
-En la figura 1 de muestra el diagrama de bloques \todo{Puede que sea mejor modificar la figura (ver cuaderno)} de un sistema de seguridad simplificado que se divide en los siguientes componentes:
+En la figura 1 de muestra el diagrama de bloques \todo{Puede que sea
+  mejor modificar la figura (ver cuaderno)} de un sistema de seguridad
+simplificado que se divide en los siguientes componentes:
 \begin{enumerate}
-\item \textbf{Preprocesamiento}: Componente que procesa los datos de entrada (datos de red sin procesar) para extraer sus principales caracteristicas con el objetivo de generar una representación equivalente pero mas reducida (datos o vectores caracteristicos, estadisticas) y apropiada para etapas de procesamiento posteriores.
-\item \textbf{Alarma}: tal y como se muestra en la figura 1, este componente toma los datos caracteristicos y lanza alarmas de red (logs que reporta eventos, reportes de red, etc) con el fin de indicar a los administradores posibles problemas en la red. El papel de las alarmas no se limita meramente al de indicadores, tambien pueden ser empleadas como entradas adicionales a un componente de procesamiento posterior para posterior analisis.
-\item \textbf{Procesamiento}: \todo{posible renombramiento de este componente} este componente lleva a cabo acciones de control (bloquear trafico, limitar ancho de banda, reconfigurar la red, aislar equipos infectados, lanzar indicadores de alarma, etc) con el fin de mitigar problemas en la red sin intervención humana.
+\item \textbf{Preprocesamiento}: Componente que procesa los datos de
+  entrada (datos de red sin procesar) para extraer sus principales
+  caracteristicas con el objetivo de generar una representación
+  equivalente pero mas reducida (datos o vectores caracteristicos,
+  estadisticas) y apropiada para etapas de procesamiento posteriores.
+\item \textbf{Alarma}: tal y como se muestra en la figura 1, este
+  componente toma los datos caracteristicos y lanza alarmas de red
+  (logs que reporta eventos, reportes de red, etc) con el fin de
+  indicar a los administradores posibles problemas en la red. El papel
+  de las alarmas no se limita meramente al de indicadores, tambien
+  pueden ser empleadas como entradas adicionales a un componente de
+  procesamiento posterior para posterior analisis.
+\item \textbf{Procesamiento}: \todo{posible renombramiento de este
+  componente} este componente lleva a cabo acciones de control
+  (bloquear trafico, limitar ancho de banda, reconfigurar la red,
+  aislar equipos infectados, lanzar indicadores de alarma, etc) con el
+  fin de mitigar problemas en la red sin intervención humana.
 \end{enumerate}
 
-Al momento de analizar y probar una propuesta de un sistema de seguridad, una de las limitaciones con las que se cuenta esta relacionada con la disponibilidad de datos de tráfico reales. Para tratar este problema, el presente documento explora diferentes alternativas (como data sets y generadores de tráfico) que, de acuerdo a la literatura pueden ofrecer una manera aceptable de imitar una fuente de tráfico real cuando se carece de esta. Posteriormente, se exploran metricas de analisis de tráfico tratando de hacer enfasis en las mas relevantes para los ataques de denegación de servicio. Finalmente, el documento culminará con una sección dedicada a las discuciones y conclusiones.
+Al momento de analizar y probar una propuesta de un sistema de
+seguridad, una de las limitaciones con las que se cuenta esta
+relacionada con la disponibilidad de datos de tráfico reales. Para
+tratar este problema, el presente documento explora diferentes
+alternativas (como data sets y generadores de tráfico) que, de acuerdo
+a la literatura pueden ofrecer una manera aceptable de imitar una
+fuente de tráfico real cuando se carece de esta. Posteriormente, se
+exploran metricas de analisis de tráfico tratando de hacer enfasis en
+las mas relevantes para los ataques de denegación de
+servicio. Finalmente, el documento culminará con una sección dedicada
+a las discuciones y conclusiones.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -137,35 +182,66 @@ Al momento de analizar y probar una propuesta de un sistema de seguridad, una de
 
 \section{Entradas}
 
-De todos los tipos de entradas existentes (trafico de red, carga de memoria, logs, puertos abiertos, etc), solo unas cuantas son empleadas en un determinado sistema de seguridad. Las entradas utilizadas dependen del tipo de sistema implentado (antivirus, IDS, IPS, firewall, etc). Asi, por ejemplo, antivirus no empleará las mismas entradas que un IDS. 
+De todos los tipos de entradas existentes (trafico de red, carga de
+memoria, logs, puertos abiertos, etc), solo unas cuantas son empleadas
+en un determinado sistema de seguridad. Las entradas utilizadas
+dependen del tipo de sistema implentado (antivirus, IDS, IPS,
+firewall, etc). Asi, por ejemplo, antivirus no empleará las mismas
+entradas que un IDS.
 
-Teniendo en cuenta lo anterior, el primer paso es definir el tipo de sistema a implementar, que, para el caso es el IDS. Un IDS, es un sistema cuya finalidad es evaluar el tráfico de red en busca de amenazas y lanzar alarmas en caso de detección de un patrón de tráfico anormal.
+Teniendo en cuenta lo anterior, el primer paso es definir el tipo de
+sistema a implementar, que, para el caso es el IDS. Un IDS, es un
+sistema cuya finalidad es evaluar el tráfico de red en busca de
+amenazas y lanzar alarmas en caso de detección de un patrón de tráfico
+anormal.
 
-Una vez definido el sistema de seguridad, el siguiente paso es determinar de todas las entradas existentes cuales utilizar, siendo la entrada para el caso el \textbf{trafico de red}. Este se clasifica de la siguiente manera:
+Una vez definido el sistema de seguridad, el siguiente paso es
+determinar de todas las entradas existentes cuales utilizar, siendo la
+entrada para el caso el \textbf{trafico de red}. Este se clasifica de
+la siguiente manera:
 \begin{itemize}
-\item \textbf{Trafico real}: En este caso el tráfico es generado por maquinas reales o virtuales conectados a la red. 
-\item \textbf{Trafico sintético}: En este caso el tráfico es generado por una aplicación que simula el comportamiento del trafico generado por una maquina real. 
+\item \textbf{Trafico real}: En este caso el tráfico es generado por
+  maquinas reales o virtuales conectados a la red.
+\item \textbf{Trafico sintético}: En este caso el tráfico es generado
+  por una aplicación que simula el comportamiento del trafico generado
+  por una maquina real.
 \end{itemize}
 
-Finalmente, como un mismo tipo de entrada puede estar asociada a muchos tipos de ataques, es necesario definir con claridad el ataque en el que se hará énfasis, siendo para el caso, el ataque de Denegación de servicio (DoS) el elegido.
+Finalmente, como un mismo tipo de entrada puede estar asociada a
+muchos tipos de ataques, es necesario definir con claridad el ataque
+en el que se hará énfasis, siendo para el caso, el ataque de
+Denegación de servicio (DoS) el elegido.
 
-En conclusión y resumiendo lo anterior, la defición de las entradas a emplear en un sistema de seguridad se reduce a los siguientes tres pasos básicos:
+En conclusión y resumiendo lo anterior, la defición de las entradas a
+emplear en un sistema de seguridad se reduce a los siguientes tres
+pasos básicos:
 \begin{enumerate}
 \item Definir el sistema de seguridad a emplear.
-\item Definir de acuerdo al paso uno, las entradas que el sistema empleará.
+\item Definir de acuerdo al paso uno, las entradas que el sistema
+  empleará.
 \item Definir el ataque que se analizará.
 \end{enumerate}
 
-Con estos tres items definidos representados por la triada \textbf{[ herramienta, tipo de entrada, tipo de ataque ]} que para el caso es \textbf{[ IDS, tráfico de datos, DoS ]}, se tiene la información suficiente para empezar a definir de manera más específica la fuente que se empleará como entrada en el sistema. 
+Con estos tres items definidos representados por la triada \textbf{[
+    herramienta, tipo de entrada, tipo de ataque ]} que para el caso
+es \textbf{[ IDS, tráfico de datos, DoS ]}, se tiene la información
+suficiente para empezar a definir de manera más específica la fuente
+que se empleará como entrada en el sistema.
 
-De acuerdo a algunas fuentes de literatura consultadas \citep{dos_tools,net_attacks_taxonomy} la generación de tráfico de entrada asociado con ataques de denegación de servicio simples o distribuidos (DoS o DDoS) puede realizarse empleando diferentes tipos de fuentes, las cuales se pueden agrupar en los siguientes tres tipos:
+De acuerdo a algunas fuentes de literatura consultadas
+\citep{dos_tools,net_attacks_taxonomy} la generación de tráfico de
+entrada asociado con ataques de denegación de servicio simples o
+distribuidos (DoS o DDoS) puede realizarse empleando diferentes tipos
+de fuentes, las cuales se pueden agrupar en los siguientes tres tipos:
  \begin{itemize}
 \item Datasets
-\item Herramientas de geneneracion de ataques de denegación de servicio.
+\item Herramientas de geneneracion de ataques de denegación de
+  servicio.
 \item Generadores de tráfico.
 \end{itemize}
 
-En las siguientes secciones se explicará con un poco mas de detalle cada una de estas.
+En las siguientes secciones se explicará con un poco mas de detalle
+cada una de estas.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -177,42 +253,90 @@ En las siguientes secciones se explicará con un poco mas de detalle cada una de
 
 \subsection{Fuentes de generación de ataques de degación de servicio}
 
-En la figura 2, se muestran las posibles fuentes que pueden ser seleccionadas para la generacion de tráfico de red previamente mencionadas. Tal y como se muestra en dicha fígura, inicialmente se define el tipo de fuente que se va a emplear en el experimento para la generación del tráfico de entrada que se aplicará al sistema de seguridad ya definido.
+En la figura 2, se muestran las posibles fuentes que pueden ser
+seleccionadas para la generacion de tráfico de red previamente
+mencionadas. Tal y como se muestra en dicha fígura, inicialmente se
+define el tipo de fuente que se va a emplear en el experimento para la
+generación del tráfico de entrada que se aplicará al sistema de
+seguridad ya definido.
 
-Una vez hecho lo anterior, se aplica este tráfico de entrada a dicho sistema con el objetivo de probarlo, evaluarlo y dado el caso (si se emplean tecnicas de machine learning) entrenarlo. 
+Una vez hecho lo anterior, se aplica este tráfico de entrada a dicho
+sistema con el objetivo de probarlo, evaluarlo y dado el caso (si se
+emplean tecnicas de machine learning) entrenarlo.
 
-A continuación se aborda con mas detalle cada una de las fuentes mostradas en la figura 2.
+A continuación se aborda con mas detalle cada una de las fuentes
+mostradas en la figura 2.
 
 
 \begin{comment}
 
 /------------------------ PARTE COMENTADA ---------------------------/
-En lo que respecta al presente documento, y tal como se muestra en la figura 2, las fuentes de generación de tráfico hacen referencia a las aplicaciónes de usuario para generación de trafico, generadores de tráfico (scripts y codigo fuente) y datasets (conjuntos de datos) que pueden ser seleccionadas como entradas con el objetivo de probar y evaluar un sistema. A continuación, se describirá con un poco mas de detalle cada una de las posibles fuentes que pueden ser tomadas como entradas haciendo énfasis en las aplicaciones existentes dentro de cada una de las categorias anteriormente mencionadas.
+En lo que respecta al presente documento, y tal como se muestra en la
+figura 2, las fuentes de generación de tráfico hacen referencia a las
+aplicaciónes de usuario para generación de trafico, generadores de
+tráfico (scripts y codigo fuente) y datasets (conjuntos de datos) que
+pueden ser seleccionadas como entradas con el objetivo de probar y
+evaluar un sistema. A continuación, se describirá con un poco mas de
+detalle cada una de las posibles fuentes que pueden ser tomadas como
+entradas haciendo énfasis en las aplicaciones existentes dentro de
+cada una de las categorias anteriormente mencionadas.
 \end{comment}
 
 \subsubsection{Datasets} 
 
-Un dataset se define como una coleccion de datos (items) distretos y relacionados con diferentes significados según el escenario y que fueron utilizados para alguna clase de experimento o analisis \citep{datasets_availability}. 
+Un dataset se define como una coleccion de datos (items) distretos y
+relacionados con diferentes significados según el escenario y que
+fueron utilizados para alguna clase de experimento o analisis
+\citep{datasets_availability}.
 
-En la red existe diferentes fuentes de las cuales se pueden obtener datasets de manera libre \citep{UCI, kaggle, awesome_public_datasets}. En este caso, como la disciplina de interes se centra en datos asociados a tráfico de red, la busqueda y elección de datasets que cumplan con este requisito es aun una tarea desafiante en gran parte, debido a la falta de un sitio centralizado y especializado donde sea facil obtenter este tipo de datos. 
+En la red existe diferentes fuentes de las cuales se pueden obtener
+datasets de manera libre \citep{UCI, kaggle,
+  awesome_public_datasets}. En este caso, como la disciplina de
+interes se centra en datos asociados a tráfico de red, la busqueda y
+elección de datasets que cumplan con este requisito es aun una tarea
+desafiante en gran parte, debido a la falta de un sitio centralizado y
+especializado donde sea facil obtenter este tipo de datos.
 
-Para tratar esta dificultad, Cinthya Grajeda et al \citep{datasets_availability}, presentan un overview de datasets relevantes en analisis digital forense. Asi mismo, recopilan toda esta informacion en un repositorio centralizado \citep{ds_cyber_forensics} para facilitar la busqueda, actualización y uso por parte de la comunidad, de datasets relacionados con escenarios de seguridad. De los datasets allí presentados, los únicos que representan algún interés para nuestro caso, son aquellos relacionados con trafico de red. En la tabla 1 se muestran algunos datasets de interes que pueden ser empleados como fuentes de datos para la reproducción de experimentos relacionados con los ataques de denegación de servicios.
+Para tratar esta dificultad, Cinthya Grajeda et al
+\citep{datasets_availability}, presentan un overview de datasets
+relevantes en analisis digital forense. Asi mismo, recopilan toda esta
+informacion en un repositorio centralizado \citep{ds_cyber_forensics}
+para facilitar la busqueda, actualización y uso por parte de la
+comunidad, de datasets relacionados con escenarios de seguridad. De
+los datasets allí presentados, los únicos que representan algún
+interés para nuestro caso, son aquellos relacionados con trafico de
+red. En la tabla 1 se muestran algunos datasets de interes que pueden
+ser empleados como fuentes de datos para la reproducción de
+experimentos relacionados con los ataques de denegación de servicios.
 
-Las pricipales caracteristicas mostradas en la tabla 1 para cada dataset, estan relacionadas con el tipo de datos que los componen (archivos pcap, logs, etc) que son de vital importancia por que determinan los parámetros (variables: IP origen, IP destino, etc) asociados a cada dato, el tamaño del dataset, la fecha de disponibilidad y si es Labeled (L) o Unlabeled (U). 
+Las pricipales caracteristicas mostradas en la tabla 1 para cada
+dataset, estan relacionadas con el tipo de datos que los componen
+(archivos pcap, logs, etc) que son de vital importancia por que
+determinan los parámetros (variables: IP origen, IP destino, etc)
+asociados a cada dato, el tamaño del dataset, la fecha de
+disponibilidad y si es Labeled (L) o Unlabeled (U).
 
-\todo{Como se puede enfatizar que este es el ultimo parrafo, se puede deja asi o es necesario hacer este enfasis}
-El uso de datasets facilita el diseño de pruebas experimentales pues, permite la aplicación de una misma entrada (dataset como tal) ante diferentes condiciones y configuraciónes del sistema de seguridad estudiado. Ademas, los datasets son ampliamente usados en areas de investigacion con machine learning (ML) y sistemas de intrucion (IDS) \citep{using_kdd} lo cual hace que valga la pena que estos sean empleados como una fuente de entrada al definir un experimento.
+\todo{Como se puede enfatizar que este es el ultimo parrafo, se puede
+  deja asi o es necesario hacer este enfasis} El uso de datasets
+facilita el diseño de pruebas experimentales pues, permite la
+aplicación de una misma entrada (dataset como tal) ante diferentes
+condiciones y configuraciónes del sistema de seguridad
+estudiado. Ademas, los datasets son ampliamente usados en areas de
+investigacion con machine learning (ML) y sistemas de intrucion (IDS)
+\citep{using_kdd} lo cual hace que valga la pena que estos sean
+empleados como una fuente de entrada al definir un experimento.
 
 %\newpage
 %\KOMAoptions{paper=landscape,pagesize}
 %\recalctypearea
-\newpage
-\begin{landscape}
+%\newpage
+%\begin{landscape}
 
 \begin{table}[htbp]
-\centering
-\begin{tabular}{|p{0.2\linewidth}|p{0.2\linewidth}|p{0.1\linewidth}|p{0.1\linewidth}|p{0.1\linewidth}|}\hline
-\multicolumn{1}{|c|}{\textit{\textbf{Dataset}}} & 
+  \centering
+  \footnotesize
+  \begin{tabular}{|p{0.2\linewidth}|p{0.2\linewidth}|p{0.1\linewidth}|p{0.1\linewidth}|p{0.1\linewidth}|}\hline
+    \multicolumn{1}{|c|}{\textit{\textbf{Dataset}}} & 
 \multicolumn{1}{c|}{\textit{\textbf{Tipo de datos}}} &
 \multicolumn{1}{|c|}{\textit{\textbf{Tamaño}}} & 
 \multicolumn{1}{|c|}{\textit{\textbf{Fecha}}} &
@@ -293,8 +417,8 @@ L
 \caption{Principales caracteristicas de algunos datasets para hacer pruebas con ataques de denegacion de sevicio} \label{tab:sometab}
 \end{table} 
 
-\end{landscape}
-\newpage
+%\end{landscape}
+%\newpage
 %\newpage
 %\KOMAoptions{paper=portrait,pagesize}
 %\recalctypearea
@@ -302,14 +426,22 @@ L
 
 \subsubsection{Herramientas para lanzar ataques de denegacion de servicio} 
 
-Existe un gran numero de herramientas para realizar ataques. Mas exactamente en el caso de los ataques de denegación de servicios, la obtención y uso de estas es sumamente facil gracias a la existencia de portales como \href{http://sectools.org/}{sectools} o distribuciones linux enfocadas en seguridad como kali que traen muchas de estas aplicaciones por defecto. La siguiente tabla \citep{dos_tools} muestran algunas aplicaciones empleadas para lanzar ataques de denegación de servicio de manera resumida:\todo{Agregando nueva tabla}
+Existe un gran numero de herramientas para realizar ataques. Mas
+exactamente en el caso de los ataques de denegación de servicios, la
+obtención y uso de estas es sumamente facil gracias a la existencia de
+portales como \href{http://sectools.org/}{sectools} o distribuciones
+linux enfocadas en seguridad como kali que traen muchas de estas
+aplicaciones por defecto. La siguiente tabla \citep{dos_tools}
+muestran algunas aplicaciones empleadas para lanzar ataques de
+denegación de servicio de manera resumida:\todo{Agregando nueva tabla}
 
 \newpage
 %\KOMAoptions{paper=landscape,pagesize}
 %\recalctypearea
 \begin{landscape}
 
-\begin{table}[htbp]
+  \begin{table}[htbp]
+      \tiny
 \centering
 \begin{tabular}{|p{0.1\linewidth}|p{0.1\linewidth}|p{0.2\linewidth}|p{0.1\linewidth}|p{0.1\linewidth}|}\hline
 \multicolumn{1}{|c|}{\textit{\textbf{Herramienta}}} & 
