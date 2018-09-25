@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.14)  23 SEP 2018 20:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.14)  25 SEP 2018 00:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1181,633 +1181,467 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 438.
 [6]
-Underfull \hbox (badness 2326) in paragraph at lines 455--455
-[]|\OT1/cmr/m/n/6 GET Flood, POST Flood, Ran-dom
+Underfull \hbox (badness 10000) in paragraph at lines 460--460
+[]|\OT1/cmr/m/n/6 LOIC (Low
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 460--460
-[]|\OT1/cmr/m/n/6 LOIC (Low Or-bit
+Underfull \hbox (badness 10000) in paragraph at lines 460--460
+\OT1/cmr/m/n/6 Or-bit Ion
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 461--461
+[]|\OT1/cmr/m/n/6 HTTP, TCP,
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 462--462
+[]|\OT1/cmr/m/n/6 GET Flood, TCP Flood,
  []
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
+Underfull \hbox (badness 10000) in paragraph at lines 488--488
+[]|\OT1/cmr/m/n/6 Tor's Ham-
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 509--509
-[]|\OT1/cmr/m/n/6 High Or-bit Ion
+[]|\OT1/cmr/m/n/6 High Or-bit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 509--509
+\OT1/cmr/m/n/6 Ion Can-non
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 516--516
-[]|\OT1/cmr/m/n/6 HULK (HTTP
+[]|\OT1/cmr/m/n/6 HULK
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 516--516
-\OT1/cmr/m/n/6 Un-bea-ra-ble Load
- []
-
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 527.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 527.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 527.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 527.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 527.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 527.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 527.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 527.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 527.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 527.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 527.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 527.
-[7
-
-]
-Underfull \hbox (badness 5077) in paragraph at lines 538--538
-\OT1/cmr/m/n/12 Flood Net-
+\OT1/cmr/m/n/6 (HTTP
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 539--539
-[]|\OT1/cmr/m/n/12 ICMP,
+Underfull \hbox (badness 10000) in paragraph at lines 516--516
+\OT1/cmr/m/n/6 Un-bea-ra-ble
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 540--540
-[]|\OT1/cmr/m/n/12 ICMP Flood, SYN
+Underfull \hbox (badness 5260) in paragraph at lines 518--518
+[]|\OT1/cmr/m/n/6 TCP SYN flood, HTTP
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 542--543
-[]|\OT1/cmr/m/n/12 Ancho de
+Underfull \hbox (badness 10000) in paragraph at lines 523--523
+[]|\OT1/cmr/m/n/6 TFN (Tri-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--523
+\OT1/cmr/m/n/6 be Flood
+ []
+
+
+Underfull \hbox (badness 6001) in paragraph at lines 524--524
+[]|\OT1/cmr/m/n/6 ICMP, TCP,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
+[]|\OT1/cmr/m/n/6 Ancho de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--530
+[]|\OT1/cmr/m/n/6 trin00 (o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
+[]|\OT1/cmr/m/n/6 Ancho de
+ []
+
+
+Underfull \hbox (badness 6001) in paragraph at lines 538--538
+[]|\OT1/cmr/m/n/6 ICMP, TCP,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--542
+[]|\OT1/cmr/m/n/6 Ancho de
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 545--545
-[]|\OT1/cmr/m/n/12 trin00 (o
+[]|\OT1/cmr/m/n/6 TCP, UDP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 549--550
-[]|\OT1/cmr/m/n/12 Ancho de
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
+[]|\OT1/cmr/m/n/6 Ancho de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 553--553
-[]|\OT1/cmr/m/n/12 ICMP,
+Underfull \hbox (badness 2005) in paragraph at lines 552--552
+[]|\OT1/cmr/m/n/6 HTTP, TCP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 554--554
-[]|\OT1/cmr/m/n/12 ICMP Flood, SYN
+Underfull \hbox (badness 2980) in paragraph at lines 553--553
+[]|\OT1/cmr/m/n/6 Create full TCP con-nec-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--557
-[]|\OT1/cmr/m/n/12 Ancho de
+Underfull \hbox (badness 5622) in paragraph at lines 553--553
+\OT1/cmr/m/n/6 tions, when the con-nec-
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 560--560
-[]|\OT1/cmr/m/n/12 TCP, UDP,
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
+[]|\OT1/cmr/m/n/6 Ancho de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 560--560
-\OT1/cmr/m/n/12 ICMP,
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
+\OT1/cmr/m/n/6 ban-da, Re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--564
-[]|\OT1/cmr/m/n/12 Ancho de
+Underfull \hbox (badness 10000) in paragraph at lines 580--580
+[]|\OT1/cmr/m/n/6 TCP, UDP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--567
-[]|\OT1/cmr/m/n/12 HTTP,
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
+[]|\OT1/cmr/m/n/6 Ancho de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--567
-\OT1/cmr/m/n/12 TCP,
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
+\OT1/cmr/m/n/6 ban-da, Re-
  []
 
 
-Underfull \hbox (badness 2990) in paragraph at lines 568--568
-[]|\OT1/cmr/m/n/12 Create full TCP con-
+Underfull \hbox (badness 10000) in paragraph at lines 586--586
+[]|\OT1/cmr/m/n/6 Owasp Http
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 591--592
-[]|\OT1/cmr/m/n/12 Ancho de
+Underfull \hbox (badness 10000) in paragraph at lines 588--588
+[]|\OT1/cmr/m/n/6 HTTP POST at-tacks,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 591--592
-\OT1/cmr/m/n/12 ban-da,
+Underfull \hbox (badness 10000) in paragraph at lines 593--593
+[]|\OT1/cmr/m/n/6 THC-SSL-
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 595--595
-[]|\OT1/cmr/m/n/12 TCP, UDP,
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
+[]|\OT1/cmr/m/n/6 Presentaci^^Son
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--595
-\OT1/cmr/m/n/12 HTTP,
+Underfull \hbox (badness 10000) in paragraph at lines 602--602
+[]|\OT1/cmr/m/n/6 HTTP POST at-tacks,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--599
-[]|\OT1/cmr/m/n/12 Ancho de
+Underfull \hbox (badness 10000) in paragraph at lines 604--605
+[]|\OT1/cmr/m/n/6 Ancho de
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 598--599
-\OT1/cmr/m/n/12 ban-da,
- []
-
-
-Underfull \hbox (badness 4060) in paragraph at lines 603--603
-[]|\OT1/cmr/m/n/12 HTTP POST at-tacks,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 608--608
-[]|\OT1/cmr/m/n/12 THC-SSL-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 611--611
-[]|\OT1/cmr/m/n/12 Presentaci^^Son (Pro-to-col
- []
-
-
-Underfull \hbox (badness 4060) in paragraph at lines 617--617
-[]|\OT1/cmr/m/n/12 HTTP POST at-tacks,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 619--620
-[]|\OT1/cmr/m/n/12 Ancho de
- []
-
-
-LaTeX Warning: Float too large for page by 16.96875pt on input line 624.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 627.
+(babel)             in language  on input line 623.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 627.
+(babel)             in language  on input line 623.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 627.
+(babel)             in language  on input line 623.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 627.
+(babel)             in language  on input line 623.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 627.
+(babel)             in language  on input line 623.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 627.
+(babel)             in language  on input line 623.
+
+Underfull \hbox (badness 1845) in paragraph at lines 637--638
+[]|\OT1/cmr/m/n/10 Enlace, red, trans-
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 642--643
+[]|\OT1/cmr/m/n/10 Enlace, red, trans-
+ []
+
+
+Underfull \hbox (badness 4291) in paragraph at lines 646--647
+\OT1/cmr/m/n/10 IGMP, ARP, DHCP, OAM, VLAN,
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 648--649
+[]|\OT1/cmr/m/n/10 Enlace, red, trans-
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 653--654
+[]|\OT1/cmr/m/n/10 Enlace, red, trans-
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 658--659
+[]|\OT1/cmr/m/n/10 Enlace, red, trans-
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 663--664
+[]|\OT1/cmr/m/n/10 Enlace, red, trans-
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 698--699
+[]|\OT1/cmr/m/n/10 Transporte, en-la-ce,
+ []
+
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 627.
+(babel)             in language  on input line 752.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 627.
+(babel)             in language  on input line 752.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 627.
+(babel)             in language  on input line 752.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 627.
+(babel)             in language  on input line 752.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 627.
+(babel)             in language  on input line 752.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 627.
-[8]
+(babel)             in language  on input line 752.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 635.
+(babel)             in language  on input line 752.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 635.
+(babel)             in language  on input line 752.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 635.
+(babel)             in language  on input line 752.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 635.
+(babel)             in language  on input line 752.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 635.
+(babel)             in language  on input line 752.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 635.
+(babel)             in language  on input line 752.
+[7]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 752.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 752.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 752.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 752.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 752.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 752.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 752.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 752.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 752.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 752.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 752.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 752.
+ [8]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 758.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 758.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 758.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 758.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 758.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 758.
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--644
-[]|\OT1/cmr/m/n/12 Bit-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 645--645
-[]|\OT1/cmr/m/n/12 TCP,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 645--645
-\OT1/cmr/m/n/12 UDP,
- []
-
-
-Overfull \hbox (3.97256pt too wide) in paragraph at lines 646--646
-[]|\OT1/cmr/m/n/12 packETH| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 647--647
-[]|\OT1/cmr/m/n/12 TCP,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 647--647
-\OT1/cmr/m/n/12 UDP,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 647--647
-\OT1/cmr/m/n/12 IP,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 647--647
-\OT1/cmr/m/n/12 ARP,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 649--649
-[]|\OT1/cmr/m/n/12 ARP,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 649--649
-\OT1/cmr/m/n/12 DNS,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 649--649
-\OT1/cmr/m/n/12 ET-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 649--649
-\OT1/cmr/m/n/12 HER-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 649--649
-\OT1/cmr/m/n/12 NET,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 649--649
-\OT1/cmr/m/n/12 ICMP,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 649--649
-\OT1/cmr/m/n/12 IGMP,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 649--649
-\OT1/cmr/m/n/12 IP,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 649--649
-\OT1/cmr/m/n/12 OSPF,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 649--649
-\OT1/cmr/m/n/12 RIP,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 649--649
-\OT1/cmr/m/n/12 TCP,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
-[]|\OT1/cmr/m/n/12 D-ITG
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
-\OT1/cmr/m/n/12 (Dis-tri-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
-\OT1/cmr/m/n/12 bu-ted
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
-\OT1/cmr/m/n/12 In-ter-net
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
-\OT1/cmr/m/n/12 Traf-fic
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
-\OT1/cmr/m/n/12 Ge-ne-ra-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 651--651
-[]|\OT1/cmr/m/n/12 HTTP,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--652
-[]|\OT1/cmr/m/n/12 curl-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--652
-[]|\OT1/cmr/m/n/12 HTTP,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--652
-\OT1/cmr/m/n/12 HTTPS,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--652
-\OT1/cmr/m/n/12 FTP,
- []
-
-
-Overfull \hbox (18.29042pt too wide) in paragraph at lines 641--655
+Overfull \hbox (25.19997pt too wide) in paragraph at lines 764--773
  [][] 
  []
 
 
-Overfull \hbox (2.01425pt too wide) in paragraph at lines 663--663
-[]|\OT1/cmr/m/n/12 HTTPerf| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 663--663
-[]|\OT1/cmr/m/n/12 HTTP,
- []
-
-
-Overfull \hbox (18.29042pt too wide) in paragraph at lines 660--665
+Overfull \hbox (25.19997pt too wide) in paragraph at lines 784--799
  [][] 
  []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 801.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 801.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 801.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 801.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 801.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 801.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 816.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 816.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 816.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 816.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 816.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 675.
-[9
-
-]
+(babel)             in language  on input line 816.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 816.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 816.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 816.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 816.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 816.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 816.
+[9]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 821.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 821.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 821.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 821.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 821.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 675.
+(babel)             in language  on input line 821.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 847.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 847.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 847.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 847.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 847.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 847.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 847.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 847.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 847.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 847.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 847.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 847.
  [10]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 681.
+(babel)             in language  on input line 877.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 681.
+(babel)             in language  on input line 877.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 681.
+(babel)             in language  on input line 877.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 681.
+(babel)             in language  on input line 877.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 681.
+(babel)             in language  on input line 877.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 681.
-
-Overfull \hbox (25.19997pt too wide) in paragraph at lines 687--696
- [][] 
- []
-
-
-Overfull \hbox (25.19997pt too wide) in paragraph at lines 707--722
- [][] 
- []
-
+(babel)             in language  on input line 877.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 877.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 877.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 877.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 877.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 877.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 877.
+ [11]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 739.
+(babel)             in language  on input line 884.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 739.
+(babel)             in language  on input line 884.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 739.
+(babel)             in language  on input line 884.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 739.
+(babel)             in language  on input line 884.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 739.
+(babel)             in language  on input line 884.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 739.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 743.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 743.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 743.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 743.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 743.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 743.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 743.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 743.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 743.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 743.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 743.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 743.
-[11]
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 761.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 761.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 761.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 761.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 761.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 761.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 761.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 761.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 761.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 761.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 761.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 761.
- [12]
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 789.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 789.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 789.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 789.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 789.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 789.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 789.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 789.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 789.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 789.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 789.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 789.
- [13]
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 802.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 802.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 802.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 802.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 802.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 802.
+(babel)             in language  on input line 884.
  (./main.bbl)
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 817.
- [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 817.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 817.
+(babel)             in language  on input line 899.
+ [12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 899.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 899.
  (./main.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 817.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 817.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 899.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 899.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 2FE1D6E0B8BD2E428DFF792C0ACF45A5;704.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 817.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 899.
  ) 
 Here is how much of TeX's memory you used:
- 21883 strings out of 493029
- 390686 string characters out of 6136234
- 506649 words of memory out of 5000000
+ 21879 strings out of 493029
+ 390640 string characters out of 6136234
+ 516567 words of memory out of 5000000
  24975 multiletter control sequences out of 15000+600000
  15228 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,100p,538b,937s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,11n,100p,518b,937s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
@@ -1817,10 +1651,10 @@ dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (15 pages, 971953 bytes).
+Output written on main.pdf (13 pages, 973670 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
- 216 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
+ 240 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
