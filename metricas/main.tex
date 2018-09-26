@@ -757,7 +757,79 @@ Los generadores de trafico son utiles para simular trafido de red, testear firew
 
 \section{Analisis de trafico}
 
+
 \textbf{Herramientas para el monitoreo de trafico}
+
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\begin{tabular}{|p{0.3\linewidth}|p{0.7\linewidth}|}
+\hline
+\multicolumn{1}{|c|}{\textit{\textbf{Herramienta}}} & \multicolumn{1}{c|}{\textit{\textbf{Caracteristicas básicas}}} \tabularnewline \hline
+
+Wireshark & 
+Analisis de protocolo (completar)  
+\tabularnewline \hline
+
+tcpdump & 
+Analiza protocolos por linea de comandos, permite obtener tráfico desde una interfaz de red o desde un archivo previamente creado, permite mostrar los paquetes capturados en pantalla o almacenarlos en un archivo, soporta filtros.  
+\tabularnewline \hline
+
+tcprelay & 
+Permite usar tráfico previamente capturado en formato pcap para testear una amplia variedad de dispositivos de red, permite la clasificación de trafico como de cliente o servidor, puede editar archivos de trafico pcap (modificando cabeceras de las capas L2, L3 y L4), incluye varias herramientas (tcpprep, tcprewrite, tcpreplay, tcpliveplay, tcpliveplay, tcpreplay-edit, tcpbridge, tcpcapinfo)
+\tabularnewline \hline
+
+tshark & 
+Versión orientada a terminal de Wireshark por lo que soporta las mismas opciones que dicha herramienta. 
+\tabularnewline \hline
+
+Networkminer & 
+Permite analisis de trafico de red tanto de manera activa (capturando trafico directamente de la red) como pasiva (leyendolo de algun archivo de trafico), permite deteccion de sistemas operativos, sesiones, hostnames, puertos abiertos, etc. sin necesidad de poner trafico en la red, desplique de información relacionada de manera amigable.
+\tabularnewline \hline
+
+Ngrep & 
+Analizador de tráfico con capacidad de aplicar expresiones regulares al payload de los paquetes analizados, trabaja con varios tipos de protocolos como IPv4/6, TCP, UDP, ICMPv4/6, etc, permite analisis de trafico de red de manera activa y pasiva.
+\tabularnewline \hline
+
+Snort & 
+Pese a ser un IDS tiene la capacidad de funcionar como snifer permitiendo realizar análisis de trafico, soporta diferentes archivos de red (pcap por ejemplo), permite lectura de tráfico de manera pasiva y activa, permite obtener estadisticas del tráfico.
+\tabularnewline \hline
+
+Driftnet & 
+snifer enfocado en la obtencion de imagenes dentro del trafico de red, permite ademas la extracción de audio MPEG de la red para escucharlo.
+\tabularnewline \hline
+
+Xplico & 
+Permite el analisis de trafico de red de manera online y ofline, amigable, multiprotocolo (HTTP, SIP, IMAP, POP, SMTP, TCP, UDP, IP,...), facilita la obtención y visualización de estadisticas e información relevante relacionada con el tráfico analizado como imagenes, URLs, etc.
+\tabularnewline \hline
+
+Fenris & 
+
+\tabularnewline \hline
+
+Flow-Tools & 
+
+\tabularnewline \hline
+
+tcptrack & 
+
+\tabularnewline \hline
+
+tcpwrite & 
+Edición de archivos de trafico \textbf{pcap} que permite reescribir headers TCP/IP y de capa 2, asi mismo permite generar trafico mediante el reuso de paquetes \textbf{pcap} ya disponibles. 
+\tabularnewline \hline
+
+tcpreplay &  
+Permite el reuso de paquetes de trafico previamente capturados a velocidades arbitrarias en la red\tabularnewline \hline
+nmap & Herramienta para escaneo de puertos y exploración de redes \tabularnewline \hline
+tcptrack & Usada para sniffing y despliegue de información (IPs fuente y destino, estado de la conexion, idle time, Puertos fuente y destino y uso del ancho de banda en la conexion entre otros) de las conexiones de red vistas en la interfaz de red.   \tabularnewline \hline
+
+\end{tabular}
+\end{table}
+
+
+\begin{comment}
 
 \begin{table}[htbp]
 \centering
@@ -772,7 +844,7 @@ tcptrack & Usada para sniffing y despliegue de información (IPs fuente y destin
 \end{tabular}
 \end{table}
 
-
+\end{comment}
 
 \textbf{Parametros en los paquetes de red - Representación}
 
