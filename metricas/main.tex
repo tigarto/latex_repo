@@ -69,7 +69,7 @@ Henry \textsc{Arcila} % Your name
 \begin{minipage}{0.4\textwidth}
 \begin{flushright} \large
 \emph{Supervisors:} \\
-Prof. Natalia \textsc{Gaviria} % Supervisor's Name
+Prof. Natalia \textsc{Gaviria} \\% Supervisor's Name
 Prof. Danny \textsc{Múnera} % Supervisor's Name
 
 \end{flushright}
@@ -426,19 +426,9 @@ L
 
 \subsubsection{Herramientas para lanzar ataques de denegacion de servicio} 
 
-Existe un gran numero de herramientas para realizar ataques. Mas
-exactamente en el caso de los ataques de denegación de servicios, la
-obtención y uso de estas es sumamente facil gracias a la existencia de
-portales como \href{http://sectools.org/}{sectools} o distribuciones
-linux enfocadas en seguridad como kali que traen muchas de estas
-aplicaciones por defecto. La siguiente tabla \citep{dos_tools}
-muestran algunas aplicaciones empleadas para lanzar ataques de
-denegación de servicio de manera resumida:\todo{Agregando nueva tabla}
+Existen varios tipos de ataques de denegación de servicio los cuales han sido ampliamente estudiados y clasificados bajo diferentes taxonomias \citep{dos_ataques_defensas_ea,taxonomy_DDoS}. Con el fin de simplificar la clasificación de estos ataques; para el presente caso, la clasificación se hara en base a tres tipos: los ataques de denegacion de servicio de la capa de aplicación, los ataques de denegación de servicio de la capa de protocolo y los ataques de denegación de servicio basados en volumen \citep{kali_goldeneye}.
 
-\newpage
-%\KOMAoptions{paper=landscape,pagesize}
-%\recalctypearea
-%\begin{landscape}
+Para llevar a cabo los ataques de denegación de servicio, existe un gran numero de herramientas especializadas \citep{dos_update_perspective,dos_tools} las cuales, mediante diferentes técnicas (flooding, smurf, fraggle, ping de la muerte, etc.) y empleando diferentes protocolos (HTTP, UDP, TCP, ICMP, etc) pueden lanzar ataques para hacer un sitio inaccesible. La tabla 2 muestra algunas de estas herramientas:  
 
 \begin{table}[htbp]
 \tiny
@@ -493,21 +483,21 @@ Recurso
 \tabularnewline \hline
 
 Nuclear DDoSer &
-http & 
+HTTP & 
 Slowloris, Slow POST & 
 Aplicacion & 
 Recurso
 \tabularnewline \hline
 
 Railgun &
-http & 
+HTTP & 
 Slowloris o Slow POST & 
 Aplicacion & 
 Recurso
 \tabularnewline \hline
 
 High Orbit Ion Cannon (HOIC) &
-http & 
+HTTP & 
 POST Flood, GET Flood & 
 Aplicacion & 
 Recurso
@@ -608,21 +598,11 @@ Ancho de banda
 \caption{Principales caracteristicas de algunos datasets para hacer pruebas con ataques de denegacion de sevicio} \label{tab:sometab}
 \end{table} 
 
-
-%\end{landscape}
-%\newpage
-%\KOMAoptions{paper=portrait,pagesize}
-%\recalctypearea
-
-
-https://www.icir.org/models/trafficgenerators.html
-
-
-Como existen varios tipos de ataques de denegación de servicio; conocer la herramienta, permite definir el tipo de ataque en el que esta se enfoca y por ende es un paso fundamental al definir la entrada que sera empleada en el experimento.
+En la tabla anterior, es importante hacer énfasis en el método de ataque y el tipo de tráfico generado por la herramienta pues estos son criterios de gran importancia para la selección de la herramienta. Finalmente, una de las principales caracteristicas de estas herramientas radica en si facilidad se uso, facilidad de obtención y la gran cantidad de información disponible en la web sobre su modo de empleo lo cual hace que cualquier persona sin la cantidad sufiente de conocimientos tecnicos necesarios sea capaz de llevar a cabo un ataque de esta índole.
 
 \subsubsection{Generadores de trafico}
 
-Los generadores de trafico son herramientas que pueden generar trafico tanto legitimo como de ataque. A continuación muestran algunos resumiendo sus caracteristicas mas relevantes \citep{dos_tools}. 
+Los generadores de trafico  son herramientas usadas para inyectar en la red trafico (aleatorio o personalizado) de manera controlada. Dentro de los principales usos de estos se encuentran: la simulación de tráfico (legitimo o de ataque) de red, evaluación de desempeño, evaluación de mecanismos de defensa (firewals, IDS e IPS) y automatización de testing de redes mediante scripting. Los generadores pueden ser tanto de hardware como de software siendo este último, el caso en el cual se hará énfasis. La siguiente tabla muestra algunos de los generadores de tráfico disponibles en la red \citep{dos_tools} haciendo enfasis en el tipo de tráfico generado y la capa OSI con mayor relación:
 
 \begin{table}[htbp]
 \footnotesize
@@ -704,12 +684,11 @@ TCP, UDP &
 Transporte 
 \tabularnewline \hline
 
-
 \end{tabular}
 \caption{Generadores de tráfico} \label{tab:sometab}
 \end{table} 
 
-\textbf{Depronto en la tabla de generadores de trafico hasta podemos agregar la URL como en: https://ieeexplore.ieee.org/document/6253191/}
+Selección ... que pongo ? \todo{por resolver}
 
 \begin{comment}
 
@@ -746,19 +725,10 @@ HTTPerf & httperf es una herramienta para la medición de desempeño en servidor
 
 
 
-\textbf{Nota}: Ver las herramientas relacionadas ---> http://bittwist.sourceforge.net/doc.html 
 
+\section{Analisis de trafico} \todo{Puede que sea necesario repensar el titulo por NFAT para esta sección}
 
-\FloatBarrier
-
-Los generadores de trafico son utiles para simular trafido de red, testear firewalls, IDS e IPS, asi mismo para resolver varios problemas de red. (Mejorar esta redaccion y agregar su papel para las entradas)
-
-
-
-\section{Analisis de trafico}
-
-
-\textbf{Herramientas para el monitoreo de trafico}
+\subsection{Herramientas para el análisis de trafico}
 
 
 \begin{table}[htbp]
@@ -827,6 +797,91 @@ tcptrack & Usada para sniffing y despliegue de información (IPs fuente y destin
 
 \end{tabular}
 \end{table}
+
+
+\subsection{Metricas}
+
+El término métricas describe un amplio rango de herramientas y técnicas empleadas para evaluar datos. Los datos evaluados se emplean como medidas que se comparan con uno o más puntos de referencia para producir un resultado que facilite la toma de decisiones. No todas las métricas son buenas, por ende, elegir buenas métricas es indispensable para el análisis de un fenómeno o sistema; desde el punto de vista más básico una buena métrica es aquella que responde sin ambigüedad alguna a la pregunta del porqué se está usando \citep{sans_ids_metrics}.
+
+Existe un gran número de métricas que permiten medir el desempeño de una una red (por ejemplo capacidad y utilización del canal, retardo y jitter, pérdidas de paquetes y errores entre otros) y sus nodos (disponibilidad, memoria, utilización de la CPU, memoria disponible, etc) \citep{nsrc}. También, existe una relación entre el tipo de ataque y el comportamiento de la red, pues, una red cuando está bajo ataque se comporta de manera diferente que cuando no lo está. Por lo tanto, es necesaria la selección adecuada de las características a monitorear para la detección de diferentes tipos de ataques. A continuación, se muestra una tabla tomada de \citep{cipa} donde se muestra la relación entre algunas de las diferentes características monitoreadas de la red y los ataques con los cuales estas se relacionan:
+
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\begin{tabular}{|p{0.4\linewidth}|p{0.6\linewidth}|}
+\hline
+\multicolumn{1}{|c|}{\textit{\textbf{Características}}} & \multicolumn{1}{c|}{\textit{\textbf{Tipos de ataques}}} \tabularnewline \hline
+
+Packet rate & 
+Flooding DDoS, flash crowds  
+\tabularnewline \hline
+
+Percentage of ICMP packet & 
+icmp flooding, scan attack, worm
+\tabularnewline \hline
+
+Percentage of TCP packet & 
+tcp flooding, tcp worm
+\tabularnewline \hline
+
+Percentage of UDP packet & 
+udp flooding, udp worm
+\tabularnewline \hline
+
+Percentage of large packet & 
+Self-carried worm
+\tabularnewline \hline
+
+Percentage of short packet & 
+Scan attack
+\tabularnewline \hline
+
+Percentage of SYN/ACK/RST & 
+DDoS
+\tabularnewline \hline
+
+Distribution of IP address & 
+DDoS, scan
+\tabularnewline \hline
+
+Distribution of port & 
+Scan, worm
+\tabularnewline \hline
+
+Interval of arriving packet & 
+DDoS
+\tabularnewline \hline
+
+Duration of each flow/session & 
+SYN flooding
+\tabularnewline \hline
+
+Packets/bytes per flow & 
+Flooding DDoS, flash crowds
+\tabularnewline \hline
+
+Percentage of single flow & 
+DDoS
+\tabularnewline \hline
+
+Growth of new flow & 
+Scan attack
+\tabularnewline \hline
+
+Special protocol of application layer & 
+Worm, botnet
+\tabularnewline \hline
+
+\end{tabular}
+\end{table}
+
+Cabe aclarar que la relación expuesta en esta tabla no está restringida solo a los ataques de denegación de servicio; sin embargo, las características mostradas de una u otra manera inciden en mayor o menor medida en estos. Para esto se pueden emplear técnicas estadísticas \citep{sans_ids_metrics} como: la media, la mediana, la agregación (sumatoria, máximo y mínimo, desviación estándar, varianza) y series de tiempo entre otras sobre los datos, con el fin de obtener todas aquellas relaciones ocultas que mediante el análisis de los datos en bruto no se pueden encontrar.  
+
+Finalmente, mas alla de las metricas elegidas y del ataque al que se asocian; todo se reduce en principio a tareas de procesamiento sobre datos en bruto (trafico de red haciendo enfasis en uno o varios campos de los paquetes de datos) siendo el metodo y transfomación sobre estos lo que varia tal y como se muestra en algunos articulos como \citep{review_ddos_approaches,det_tech_ddos} 
+
+
+
 
 
 \begin{comment}

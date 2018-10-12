@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{awesome_public_datasets}
 Awesome public datasets.
@@ -8,6 +8,14 @@ Awesome public datasets.
 Datasets for cyber forensics.
 \newblock (Date last accessed 15-September-2018).
 
+\bibitem{kali_goldeneye}
+Dos website in kali linux using goldeneye.
+\newblock (Date last accessed 2-October-2018).
+
+\bibitem{sans_ids_metrics}
+How can you build and leverage snort ids metrics to reduce risk?
+\newblock (Date last accessed 11-October-2018).
+
 \bibitem{internet_stats}
 Internet world stats.
 \newblock (Date last accessed 21-August-2018).
@@ -15,6 +23,10 @@ Internet world stats.
 \bibitem{kaggle}
 Kaggle.
 \newblock (Date last accessed 15-September-2018).
+
+\bibitem{nsrc}
+Network startup resource center.
+\newblock (Date last accessed 11-October-2018).
 
 \bibitem{UCI}
 Uci machine learning repository.
@@ -25,6 +37,24 @@ Sunny Behal and Krishan Saluja.
 \newblock Characterization and comparison of ddos attack tools and traffic
   generators -a review.
 \newblock 19:383--393, 04 2017.
+
+\bibitem{cipa}
+Xiao-Fan Chen and Shun-Zheng Yu.
+\newblock Cipa: A collaborative intrusion prevention architecture for
+  programmable network and sdn.
+\newblock {\em Computers \& Security}, 58:1 -- 19, 2016.
+
+\bibitem{taxonomy_DDoS}
+M.~De Donno, A.~Giaretta, N.~Dragoni, and A.~Spognardi.
+\newblock A taxonomy of distributed denial of service attacks.
+\newblock In {\em 2017 International Conference on Information Society
+  (i-Society)}, pages 100--107, July 2017.
+
+\bibitem{dos_ataques_defensas_ea}
+Christos Douligeris and Aikaterini Mitrokotsa.
+\newblock Ddos attacks and defense mechanisms: classification and
+  state-of-the-art.
+\newblock {\em Computer Networks}, 44(5):643 -- 666, 2004.
 
 \bibitem{datasets_availability}
 Cinthya Grajeda, Frank Breitinger, and Ibrahim Baggili.
@@ -37,6 +67,23 @@ N.~Hoque, Monowar~H. Bhuyan, R.C. Baishya, D.K. Bhattacharyya, and J.K. Kalita.
 \newblock Network attacks: Taxonomy, tools and systems.
 \newblock {\em Journal of Network and Computer Applications}, 40:307 -- 324,
   2014.
+
+\bibitem{det_tech_ddos}
+P.~Kamboj, M.~C. Trivedi, V.~K. Yadav, and V.~K. Singh.
+\newblock Detection techniques of ddos attacks: A survey.
+\newblock In {\em 2017 4th IEEE Uttar Pradesh Section International Conference
+  on Electrical, Computer and Electronics (UPCON)}, pages 675--679, Oct 2017.
+
+\bibitem{review_ddos_approaches}
+Parneet Kaur, Manish Kumar, and Abhinav Bhandari.
+\newblock A review of detection approaches for distributed denial of service
+  attacks.
+\newblock {\em Systems Science \& Control Engineering}, 5(1):301--320, 2017.
+
+\bibitem{dos_update_perspective}
+Gulshan Kumar.
+\newblock Denial of service attacks – an updated perspective.
+\newblock {\em Systems Science \& Control Engineering}, 4(1):285--294, 2016.
 
 \bibitem{using_kdd}
 Atilla Özgür and Hamit Erdem.
