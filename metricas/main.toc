@@ -10,5 +10,4 @@
 \contentsline {subsection}{\numberline {4.1}Herramientas para el an\IeC {\'a}lisis de trafico}{10}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Metricas}{10}{subsection.4.2}
 \contentsline {section}{\numberline {5}Experimento}{11}{section.5}
-\contentsline {section}{\numberline {6}Salidas}{11}{section.6}
-\contentsline {section}{\numberline {7}Conclusiones}{13}{section.7}
+\contentsline {section}{\numberline {6}Conclusiones}{11}{section.6}

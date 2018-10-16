@@ -884,46 +884,9 @@ Finalmente, mas alla de las metricas elegidas y del ataque al que se asocian; to
 
 
 
-\begin{comment}
-
-\begin{table}[htbp]
-\centering
-\begin{tabular}{|p{0.3\linewidth}|p{0.7\linewidth}|}
-\hline
-\multicolumn{1}{|c|}{\textit{\textbf{Herramienta}}} & \multicolumn{1}{c|}{\textit{\textbf{Uso}}} \tabularnewline \hline
-Wireshark & Analisis de protocolo  \tabularnewline \hline
-tcpwrite & Edición de archivos de trafico \textbf{pcap} que permite reescribir headers TCP/IP y de capa 2, asi mismo permite generar trafico mediante el reuso de paquetes \textbf{pcap} ya disponibles. \tabularnewline \hline
-tcpreplay &  Permite el reuso de paquetes de trafico previamente capturados a velocidades arbitrarias en la red\tabularnewline \hline
-nmap & Herramienta para escaneo de puertos y exploración de redes \tabularnewline \hline
-tcptrack & Usada para sniffing y despliegue de información (IPs fuente y destino, estado de la conexion, idle time, Puertos fuente y destino y uso del ancho de banda en la conexion entre otros) de las conexiones de red vistas en la interfaz de red.   \tabularnewline \hline
-\end{tabular}
-\end{table}
-
-\end{comment}
-
-\textbf{Parametros en los paquetes de red - Representación}
-
+----
 
 Para llevar a cabo la labor de preprocesamiento es necesario hacer una captura de los paquetes que viajan a traves de la red con el proposito de realizar una inspección profunda de sus principales caracteristicas. Interfaces de programación para la captura de paquetes como pcap (packet capture) e interfaces de monitoreo de paquetes como NetFlow o sflow son bastante comunes. La siguiente tabla muestra algunas de las caracteristicas que pueden ser obtenidas con estas:
-
-\begin{table}[htbp]
-\centering
-\begin{tabular}{|p{0.3\linewidth}|p{0.7\linewidth}|}
-\hline
-\multicolumn{1}{|c|}{\textit{\textbf{Parametro}}} & \multicolumn{1}{c|}{\textit{\textbf{Descripción}}} \tabularnewline \hline
-Src IP & Direccion IP fuente \tabularnewline \hline
-Src Port &  Puerto fuente \tabularnewline \hline  
-Dest IP & Direccion IP destino \tabularnewline \hline
-Dest Port & Puerto destino \tabularnewline \hline
-Proto Transport Protocol & Protocolo de transporte  (ICMP, TCP o UDP)  \tabularnewline \hline
-Num & Numero del paquete \tabularnewline \hline
-Tiempo de llegada & Tiempo de llegada de un paquete \tabularnewline \hline
-Size & Tamaño del paquete ??? \tabularnewline \hline
-header len & Longitud de la cabecera \tabularnewline \hline
-total len & Longitud total (la verdad no se de que???) \tabularnewline \hline
-flags & bandereas \tabularnewline \hline
-\end{tabular}
-\end{table}
 
 \section{Experimento}
 
@@ -944,69 +907,6 @@ http://www.iv2-technologies.com/HowToTestAnIPS.pdf
 
 En el fondo esto seria lo ideal a montar (enlace comentado)
 %https://www.dfn.de/fileadmin/7Veranstaltungen/Technologieforum/2018/Folien_Vortraege/TF_2108_Teaching_Network_Softwarization_Heseding.pdf
-
-\section{Salidas}
-
-\textbf{Extracción de caracteristicas}
-
-El conocimiento de estos parametros de red (algunos de los cuales fueron previamente citados) es de extrema utilidad por que permite analisis de trafico de red tanto offline como online. Sin embargo, adicional a este proceso, es necesario llevar a cabo una tarea adicional sobre el trafico con el fin de seleccionar los parametros mas relevantes u obtener medidas secundarias (metricas) para etapas de procesamiento posteriores. La siguiente tabla muestra algunos de los parametros que suelen ser empleados:
-
-\begin{itemize}
-\item \% of same service to same host
-\item \% on same host to same service
-\item average duration / all services
-\item average duration /current host
-\item average duration / current service
-\item bytes transfered / all services
-\item bytes transfered / current host
-\item bytes transfered / current service
-\item Destination bytes
-\item Destination IP
-\item Destination port
-\item Duplicate ACK rate
-\item Duration
-\item Hole rate
-\item Land packet
-\item Protocol
-\item Resent rate
-\item Source bytes
-\item Source IP
-\item Source port
-\item TCP Flags
-\item Timestamp
-\item \# different services accessed
-\item \# establishment errors
-\item \# FIN flags
-\item \# ICMP packets
-\item \# keys with outside hosts
-\item \# new keys
-\item \# other errors
-\item \# packets to all services
-\item \# RST flags
-\item \# SYN flags
-\item \# to certain services
-\item \# to privileged services
-\item \# to the same host
-\item \# to the same service
-\item \# to unprivileged services
-\item \# total connections
-\item \# unique keys
-\item \# urgent
-\item \% control packets
-\item \% data packets
-\item wrong data packet size rate
-\item variance of packet count to keys
-\end{itemize}
-
-Tras ver todo este gran numero de parametros entran una serie de preguntas que son de vital importancia resolver y que se citan a continuación: 
-\begin{itemize}
-\item ¿Como obtener todas estas caracteristicas del trafico de red que se esta analizando ya sea de manera online o de manera offline?
-\item ¿Que herramientas o librerias pueden existir para facilitar esta tarea?
-\item ¿Como configurarlas y ponerlas a punto para la extracción de caracteristicas?
-\end{itemize}
-
-
-
 
 \section{Conclusiones}
 
