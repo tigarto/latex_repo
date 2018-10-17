@@ -9,48 +9,50 @@ Warning--to sort, need author or key in kaggle
 Warning--to sort, need author or key in awesome_public_datasets
 Warning--to sort, need author or key in ds_cyber_forensics
 Warning--to sort, need author or key in kali_goldeneye
+Warning--to sort, need author or key in marcus_ranum
+Warning--to sort, need author or key in forensics_kiki
 Warning--to sort, need author or key in sans_ids_metrics
 Warning--to sort, need author or key in nsrc
 Warning--empty journal in dos_tools
-You've used 18 entries,
+You've used 21 entries,
             2118 wiz_defined-function locations,
-            581 strings with 6298 characters,
-and the built_in function-call counts, 5026 in all, are:
-= -- 475
-> -- 177
+            595 strings with 6518 characters,
+and the built_in function-call counts, 5647 in all, are:
+= -- 533
+> -- 192
 < -- 2
-+ -- 77
-- -- 56
-* -- 324
-:= -- 744
-add.period$ -- 46
-call.type$ -- 18
-change.case$ -- 82
++ -- 84
+- -- 60
+* -- 359
+:= -- 828
+add.period$ -- 53
+call.type$ -- 21
+change.case$ -- 93
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 190
-empty$ -- 484
-format.name$ -- 56
-if$ -- 1111
+cite$ -- 32
+duplicate$ -- 215
+empty$ -- 555
+format.name$ -- 60
+if$ -- 1253
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 10
-newline$ -- 85
-num.names$ -- 20
-pop$ -- 138
+int.to.str$ -- 21
+missing$ -- 11
+newline$ -- 98
+num.names$ -- 22
+pop$ -- 163
 preamble$ -- 1
-purify$ -- 64
+purify$ -- 72
 quote$ -- 0
-skip$ -- 147
+skip$ -- 167
 stack$ -- 0
-substring$ -- 335
-swap$ -- 37
+substring$ -- 365
+swap$ -- 40
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
-warning$ -- 9
-while$ -- 32
-width$ -- 20
-write$ -- 167
-(There were 9 warnings)
+type$ -- 84
+warning$ -- 11
+while$ -- 35
+width$ -- 23
+write$ -- 192
+(There were 11 warnings)

@@ -688,8 +688,6 @@ Transporte
 \caption{Generadores de tráfico} \label{tab:sometab}
 \end{table} 
 
-Selección ... que pongo ? \todo{por resolver}
-
 \begin{comment}
 
 \begin{table}[htbp]
@@ -723,17 +721,17 @@ HTTPerf & httperf es una herramienta para la medición de desempeño en servidor
 
 \end{comment}
 
+\section{Analisis de trafico} 
 
-
-
-\section{Analisis de trafico} \todo{Puede que sea necesario repensar el titulo por NFAT para esta sección}
+Segun Marcus Ranum un sistema de analisis forense de red (NFA - Network forenstics Analysis) es aquel concebido para la captura, almacenamiento y analisis de eventos de red para descubir la fuente de los ataques de seguridad u otros incidentes \citep{marcus_ranum}. Un sistema NFA es soportado mediante un conjunto de herramientas las cuales permiten el procesamiento de unos datos para obtener unas métricas que ofrezcan la evidencia necesaria para conocer el ataque realizado. En esta sección se hará una revisión breve de herramientas y métricas importantes.
 
 \subsection{Herramientas para el análisis de trafico}
 
+Estas herramientas permiten la captura, almacenamiento y visualización del trafico de red para facilitar el analisis posterior. En la web se encuentran disponibles herramientas tanto libres como propietarias \citep{forensics_kiki,net_forenstics}. La tabla 4 muestra alguna de dichas herramientas haciendo enfasis en las tareas basicas sobre el trafico que pueden ser realizadas por estas:
 
 \begin{table}[htbp]
 \centering
-\footnotesize
+\tiny
 \begin{tabular}{|p{0.3\linewidth}|p{0.7\linewidth}|}
 \hline
 \multicolumn{1}{|c|}{\textit{\textbf{Herramienta}}} & \multicolumn{1}{c|}{\textit{\textbf{Caracteristicas básicas}}} \tabularnewline \hline
@@ -884,9 +882,7 @@ Finalmente, mas alla de las metricas elegidas y del ataque al que se asocian; to
 
 
 
-----
 
-Para llevar a cabo la labor de preprocesamiento es necesario hacer una captura de los paquetes que viajan a traves de la red con el proposito de realizar una inspección profunda de sus principales caracteristicas. Interfaces de programación para la captura de paquetes como pcap (packet capture) e interfaces de monitoreo de paquetes como NetFlow o sflow son bastante comunes. La siguiente tabla muestra algunas de las caracteristicas que pueden ser obtenidas con estas:
 
 \section{Experimento}
 
