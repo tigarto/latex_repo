@@ -24,6 +24,7 @@
 \usepackage{booktabs}
 \usepackage{lscape}
 \usepackage{pdflscape} % https://en.wikibooks.org/wiki/LaTeX/Page_Layout
+\usepackage{longtable} % https://texblog.org/2011/05/15/multi-page-tables-using-longtable/
 
 % Ruta de las graficas
 \graphicspath{{figuras/}}
@@ -102,25 +103,11 @@ Prof. Danny \textsc{Múnera} % Supervisor's Name
 
 \begin{abstract}
 
-De a cuerdo al World internet usage and poblation statistics,
-aproximadamente un 54.4\% tienen acceso a internet
-\citep{internet_stats}. Como el recurso por excelencia intercambiado a
-traves de internet es la información este debe ser protegido; sin
-embargo, dicha tarea es cada vez mas desafiante debido a la mayor
-facilidad, numero y sofisticación de los ataques actualmente
-existentes. Para hacer frente éstos se han creado diferentes sistemas
-de seguridad como firewalls, antivirus, IDS e IPS entre otros.
+De a cuerdo al World internet usage and poblation statistics, aproximadamente un 54.4\% tienen acceso a internet \citep{internet_stats}. Como el recurso por excelencia intercambiado a traves de internet es la información, éste debe ser protegido; sin embargo, dicha tarea es cada vez mas desafiante debido a la mayor facilidad, numero y sofisticación de los ataques actualmente existentes. Para hacer frente éstos se han creado diferentes sistemas de seguridad como firewalls, antivirus, IDS e IPS entre otros.
 
-Un sistema de seguridad puede ser visto como una caja negra con unas
-entradas (trafico de red, logs, reportes de hardware, etc.), unas
-salidas (alarmas, reportes de red, logs) y un proceso cuya finalidad
-es actuar sobre las entradas, procesarlas y generar las salidas
-necesarias \todo{deficion de sistema de seguridad incompleta}. Como
-punto de partida es necesario definir el sistema haciendo las
-restricciónes necesarias en cuanto a los mecanismos de ataque y
-defensa. Para el presente caso, el sistema de seguridad a tratar se
-restringirá a los sistemas de detección de intrusiones (IDS) y el
-ataque a explorar, será el ataque de denegación de servicios (DoS).
+Un sistema de seguridad puede ser visto como una caja negra con unas entradas (trafico de red, logs, reportes de hardware, etc.), unas salidas (alarmas, reportes de red, logs, acciones sobre la infraestructura de red, etc.) y un proceso cuya finalidad es actuar sobre las entradas, procesarlas y generar las salidas necesarias; dicho proceso, consiste en detectar y mitigar los ataques a los que esta siendo sometida una red. 
+
+Debido a la gran cantidad de ataques y sistemas de seguridad, es necesario, como punto de partida, definir el sistema haciendo las restricciónes necesarias en cuanto a los mecanismos de ataque y defensa. En el presente documento, el sistema de seguridad a tratar se restringirá a los sistemas de detección de intrusiones (IDS) y el ataque a explorar, será el ataque de denegación de servicios (DoS).
  
 \end{abstract}
 
@@ -138,27 +125,26 @@ ataque a explorar, será el ataque de denegación de servicios (DoS).
 
 \section{Introducción}
 
-En la figura 1 de muestra el diagrama de bloques \todo{Puede que sea
-  mejor modificar la figura (ver cuaderno)} de un sistema de seguridad
+En la figura 1 de muestra el diagrama de bloques de un sistema de seguridad
 simplificado que se divide en los siguientes componentes:
 \begin{enumerate}
-\item \textbf{Preprocesamiento}: Componente que procesa los datos de
+\item \textbf{Sensores}: elementos ubicados estrategicamente en diferentes puntos de red (enlaces, dispositivos de red, nodos) encargados de la recolección de información. 
+
+
+\item \textbf{Colector}: componente en el cual unen y almacenan los datos obtenidos de todos los sensores de la red. La información recolectada en este componente es la que será enviada al sistema como entrada al sistema de seguridad para su procesamiento.
+\item \textbf{Procesamiento}: Componente que procesa los datos de
   entrada (datos de red sin procesar) para extraer sus principales
   caracteristicas con el objetivo de generar una representación
   equivalente pero mas reducida (datos o vectores caracteristicos,
-  estadisticas) y apropiada para etapas de procesamiento posteriores.
-\item \textbf{Alarma}: tal y como se muestra en la figura 1, este
-  componente toma los datos caracteristicos y lanza alarmas de red
-  (logs que reporta eventos, reportes de red, etc) con el fin de
-  indicar a los administradores posibles problemas en la red. El papel
-  de las alarmas no se limita meramente al de indicadores, tambien
-  pueden ser empleadas como entradas adicionales a un componente de
-  procesamiento posterior para posterior analisis.
-\item \textbf{Procesamiento}: \todo{posible renombramiento de este
-  componente} este componente lleva a cabo acciones de control
+  estadisticas) y apropiada para ser enviadas a la interfaz de despliegue y al sistema de control.
+\item \textbf{Control}: este componente lleva a cabo acciones de control
   (bloquear trafico, limitar ancho de banda, reconfigurar la red,
   aislar equipos infectados, lanzar indicadores de alarma, etc) con el
-  fin de mitigar problemas en la red sin intervención humana.
+  fin de mitigar problemas en la red sin intervención humana. Tambien, es el responsable de lanzar eventos sobre la red (anomalias, ataques) para facilitar el monitoreo de la red.  
+\item \textbf{Alarma}: tal y como se muestra en la figura 1, este
+  componente toma los eventos lanzafos por el sistema de control y los despliega de manera amigable al controlados con el fin de indicar posibles problemas sobre la red. 
+\item \textbf{Dashboard}: interfaz grafica que muestra las diferentes metricas de red. Permiten que los administradores realicen un monitoreo de la red en tiempo real para vigilar su comportamiento y tomar decisiones al respecto.
+
 \end{enumerate}
 
 Al momento de analizar y probar una propuesta de un sistema de
@@ -175,7 +161,7 @@ a las discuciones y conclusiones.
 
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[scale=0.5]{sistema_simplificado2.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
+\includegraphics[scale=0.5]{sistema_simplificado3.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
 \caption{Sistema de seguridad simplificado}
 \end{center}
 \end{figure}
@@ -252,6 +238,9 @@ cada una de estas.
 
 
 \subsection{Fuentes de generación de ataques de degación de servicio}
+
+
+Cuando no se dispone de una topologia de red definida y por ende de los sensores necesarios para la captura de información que viaja a traves de esta se pueden hace uso de fuentes de generación de trafico tal que simulen de alguna manera el trafico de red.
 
 En la figura 2, se muestran las posibles fuentes que pueden ser
 seleccionadas para la generacion de tráfico de red previamente
